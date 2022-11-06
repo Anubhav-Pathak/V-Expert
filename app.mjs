@@ -1,0 +1,10 @@
+import express from "express";
+import bodyParser from "body-parser";
+import path from "path";
+const app = express();
+app.set("view engine", "ejs");
+app.set("views", "views");
+app.use(bodyParser.urlencoded({extended: false})); 
+app.use(express.static(path.join(path.resolve(),"public")));
+app.use("/",clientRoute);
+app.listen(3000);
