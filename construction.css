@@ -50,6 +50,13 @@ p{
     font-size: 1.64rem;
     max-width: 700px;
 }
+.phone a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.64rem;
+    max-width: 700px;
+    margin-left: 0.5em;
+}
 .icon-container{
     margin-top: 5em;
 }
@@ -83,6 +90,11 @@ img[alt="Logo2"]{
 }
 .address p{
     margin-left: 0.5em;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media (max-width: 1498px){
     img[alt="Gear"]{
