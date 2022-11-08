@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
+import clientRoute from "./routes/client.mjs";
 const app = express();
 app.set("view engine", "ejs");
 app.set("views", "views");
