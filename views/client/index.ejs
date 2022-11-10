@@ -8,11 +8,58 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/acbdca7f8c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/CSS/output/output.css">
+    <link rel="stylesheet" href="/CSS/index.css">
     <title>V-Expert</title>
 </head>
 <body>
-    <header>
-        <h1 class="text-slate-500 font-bold text-3xl">Hello world!</h1>
+    <header class="py-2 px-4 flex items-center justify-end bg-stone-900 text-white">
+        <div class="flex items-center justify-center">
+            <i class="fa-solid fa-phone"></i>
+            <p class="ml-1">+971 508446765, +971 508446737</p>
+        </div>
+        <div class="flex items-center justify-center mx-4">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="ml-1">cs@vexpert.ae</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="ml-1 leading-4">534, 536 5th floor Business Village,<br>Deira Clock Tower, Dubai, UAE</p>
+        </div>
     </header>
+    <nav class="pl-4 flex items-center bg-yellow-500">
+        <a href="/"class="mr-8"><img src="/Images/Logo.png" alt="V-Expert" class="w-[150px] h-auto"></a>
+        <div class="navlinks mt-4 pl-6 pr-4 py-2 flex-grow flex items-center justify-between rounded-tl-full bg-white">
+            <div class="flex">
+                <a href="/" class="py-2 px-4 mr-4">Home</a>
+                <a href="#About" class="py-2 px-4 mr-4">About</a>
+                <div class="dropdown py-2 px-4 mr-4">
+                    <a class="dropdown" href="/packages">Packages</a>
+                    <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    <div class="dropdown-menu hidden">
+                        <a href="/packages/economy">Economy</a>
+                        <a href="/packages/business">Business</a>
+                        <a href="/packages/first">First</a>
+                    </div>
+                </div>
+                <div class="dropdown py-2 px-4 mr-4">
+                    <a class="dropdown" href="/packages">Services</a>
+                    <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    <div class="dropdown-menu hidden">
+                        <a href="/packages/economy">Economy</a>
+                        <a href="/packages/business">Business</a>
+                        <a href="/packages/first">First</a>
+                    </div>
+                </div>
+                <a href="#Contact" class="py-2 px-4 mr-4">Contact</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="/login" class=" px-8 py-2 text-white bg-stone-900 border-2 border-stone-900 rounded-3xl hover:bg-white hover:text-black">Login</a>
+                <i class="fa-solid fa-address-book hidden"></i>
+                <i class="fa-solid fa-bars hidden"></i>
+                <i class="fa-regular fa-circle-xmark hidden"></i>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
