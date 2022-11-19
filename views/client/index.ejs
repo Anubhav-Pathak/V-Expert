@@ -12,30 +12,30 @@
     <title>V-Expert</title>
 </head>
 <body>
-    <header class="hidden lg:py-3 lg:px-4 lg:flex lg:items-center lg:justify-end lg:bg-stone-900 lg:text-white">
-        <div class="flex items-center justify-center">
+    <header id="header" class="hidden flex-col absolute right-0 lg:static bg-white text-black z-10 text-right p-4 lg:p-0 lg:py-3 lg:px-4 lg:flex lg:flex-row lg:items-center lg:top-0 lg:justify-end lg:bg-stone-900 lg:text-white text-[12px] lg:text-[14px]">
+        <div class="flex items-center lg:justify-center">
             <i class="fa-solid fa-phone"></i>
             <p class="ml-1">+971 508446765, +971 508446737</p>
         </div>
-        <div class="flex items-center justify-center mx-8">
+        <div class="flex items-center justify-start lg:justify-center lg:mx-8 py-4 lg:py-0">
             <i class="fa-solid fa-envelope"></i>
             <p class="ml-1">cs@vexpert.ae</p>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center lg:justify-center">
             <i class="fa-solid fa-location-dot"></i>
             <p class="ml-1 leading-4">Dubai, UAE</p>
         </div>
     </header>
-    <nav class="py-2 lg:py-0 pl-4 flex items-center justify-between lg:justify-start bg-yellow-500">
-        <a href="/"class="mr-8"><img src="/Images/Logo.png" alt="V-Expert" class="w-[150px] h-auto"></a>
+    <nav id="nav" class="w-[100vw] fixed py-2 lg:py-0 pl-4 flex items-center justify-between lg:justify-start bg-yellow-400">
+        <a href="/"class="mr-8"><img src="/Images/Logo.png" alt="V-Expert" class="w-[100px] sm:w-[150px] h-auto"></a>
         <div class="lg:hidden pr-4">
-            <i class="fa-solid fa-address-book"></i>
+            <i id="address" class="fa-solid fa-address-book"></i>
             <i class="fa-solid fa-magnifying-glass mx-4"></i>
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="navlinks hidden lg:mt-4 lg:pl-6 lg:pr-4 lg:py-2 lg:flex-grow lg:flex lg:items-center lg:justify-between lg:rounded-tl-full lg:bg-white">
             <div class="flex">
-                <a href="/" class="py-2 px-4 mr-4 hover:text-yellow-500">Home</a>
+                <a href="/" class="py-2 px-4 mr-4 hover:text-yellow-400">Home</a>
                 <a href="#About" class="py-2 px-4 mr-4">About</a>
                 <div class="dropdown py-2 px-4 mr-4 inline-block relative">
                     <a class="dropdown" href="/packages">Packages</a>
@@ -72,6 +72,7 @@
             </div>
         </div>
     </nav>
-    <script src="JS/flowbite/flowbite.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.js"></script>
 </body>
 </html>
