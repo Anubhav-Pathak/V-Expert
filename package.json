@@ -5,8 +5,8 @@
   "main": "app.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.mjs",
-    "tailwind": "npx tailwindcss -i ./public/CSS/src/input.css -o ./public/CSS/output/output.css --watch"
+    "start": "nodemon server/app.mjs",
+    "tailwind": "npx tailwindcss -i ./server/public/CSS/src/input.css -o ./server/public/CSS/output/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,6 @@
     "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "flowbite": "^1.5.3",
     "gsap": "^3.11.3"
   },
   "devDependencies": {
