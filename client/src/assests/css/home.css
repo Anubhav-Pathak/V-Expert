@@ -1,0 +1,72 @@
+.section-main {position: relative}
+
+.hero-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fdfdfd;
+    left: 0;
+    top: 0;
+}
+
+.hero-content h1 {
+    font-size: 3.6rem;
+    max-width: 75%;
+    margin-bottom: 5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin-bottom: 4rem;
+}
+
+.hero-content h1>span {
+    color: #fdd501;
+}
+
+.carousel-container {
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+}
+
+.carousel-controller-list {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+}
+
+.carousel-controller {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fdd501;
+}
+
+.active {
+    transition: all 0.3s;
+    background-color: #fdd501;
+    border: 2px solid #fdfdfd;
+}

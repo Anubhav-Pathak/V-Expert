@@ -1,0 +1,15 @@
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 12px;
+    color: #222222;
+    border: 1px solid transparent;
+    transition: all 0.4s;
+}
+
+.btn-full-yellow {
+    background-color: #fdd501;
+    border: 1px solid #fdd501;
+}
