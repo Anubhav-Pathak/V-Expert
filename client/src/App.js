@@ -4,7 +4,6 @@ import "./assests/css/index.css"
 import "./assests/css/reuse.css"
 import Main from "./pages/main";
 import Home from "./pages/home";
-import Carousel from "./components/home/carousel";
 
 function App() {
     return (

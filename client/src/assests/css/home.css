@@ -12,6 +12,7 @@
     color: #fdfdfd;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 .hero-content h1 {
@@ -49,24 +50,49 @@
     transition: all .5s;
 }
 
-.carousel-controller-list {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    right: 4%;
-    transform: translateY(-50%);
+.swiper {
+    width: 100%;
+    height: 100%;
 }
 
-.carousel-controller {
-    height: 3rem;
-    width: 3rem;
-    margin-bottom: 2rem;
-    border-radius: 50%;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background: transparent !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
     border: 2px solid #fdd501;
+    border-radius: 50% !important;
+    opacity: 0.4 !important;
+    margin-bottom: 1.2rem !important;
+    margin-right: 1.2rem !important;
 }
 
-.active {
-    transition: all 0.3s;
-    background-color: #fdd501;
-    border: 2px solid #fdfdfd;
+.swiper-pagination-bullet-active {
+    background-color: #fdd501 !important;
+    border: 2px solid #fdfdfd !important;
+    opacity: 1 !important;
 }
