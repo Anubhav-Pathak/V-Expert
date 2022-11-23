@@ -1,4 +1,4 @@
-.section-main {position: relative}
+#section-main {position: relative}
 
 .hero-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -15,7 +15,7 @@
     z-index: 1;
 }
 
-.hero-content h1 {
+.hero-content h1, #section-services h1 {
     font-size: 3.6rem;
     max-width: 75%;
     margin-bottom: 5rem;
@@ -31,19 +31,24 @@
     color: #fdd501;
 }
 
-.carousel-container {
-    width: 100vw;
-    height: 91vh;
+/* ---------------------------------------------------------- */
+/* ---------------------- Main Carousel --------------------- */
+/* ---------------------------------------------------------- */
+
+.main-carousel {
+    width: 100%;
+    height: 92vh;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-card {
+.main-carousel-card {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 91vh;
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -80,7 +85,7 @@
     object-fit: cover;
 }
 
-.swiper-pagination-bullet {
+.main-carousel .swiper-pagination-bullet {
     background: transparent !important;
     width: 2.5rem !important;
     height: 2.5rem !important;
@@ -89,9 +94,148 @@
     opacity: 0.4 !important;
     margin-bottom: 1.2rem !important;
     margin-right: 1.2rem !important;
+    transition: all 0.4s !important;
 }
 
-.swiper-pagination-bullet-active {
+.main-carousel .swiper-pagination-bullet-active {
+    background-color: #fdd501 !important;
+    border: 2px solid #fdfdfd !important;
+    opacity: 1 !important;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------- Section Services --------------------- */
+/* ---------------------------------------------------------- */
+
+#section-services {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/assests/images/pexels-field-engineer.jpg");
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+
+#section-services h3 {
+    display: inline-block;
+    color: #fdd501;
+    font-size: 1.2rem;
+}
+
+#section-services h3::after {
+    content: "";
+    display: inline-block;
+    width: 10rem;
+    margin: 0 0 0 1.2rem;
+    transform: translateY(-50%);
+    border: 2px solid #fdd501;
+}
+
+#section-services h1 {
+    font-weight: 400;
+    color: #fdfdfd;
+    margin: 2rem 0;
+}
+
+.service-content p {
+    width: 80%;
+    color: #fdfdfd;
+    font-size: 1.3rem;
+    line-height: 145%;
+}
+
+.service-content {
+    margin-top: 4rem;
+    padding: 4rem 4rem 0;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------- Service Carousel --------------------- */
+/* ---------------------------------------------------------- */
+
+.service-carousel {
+    width: 60%;
+    padding: 0 4rem;
+}
+
+.service-carousel-card {
+    width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.service-carousel-card-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    background: #fdd501;
+    transition: all 0.4s;
+}
+
+.service-carousel-card-content-info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    padding: 1rem 2rem 2rem;
+    border-radius: 18px;
+    width: 80%;
+    background-color: #fdfdfd;
+    transition: all 0.4s;
+}
+
+.service-carousel-card-img {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+}
+
+.service-carousel h2 {
+    color: #fdd501;
+    margin-bottom: 1rem;
+}
+
+.service-carousel .swiper-slide {
+    background: transparent !important;
+}
+
+.service-carousel .swiper-slide {
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+
+.service-carousel .swiper-slide-next {
+    opacity: 1;
+}
+
+.service-carousel .swiper-slide-next .service-carousel-card-img {
+    height: 25vh;
+}
+
+.service-carousel .swiper-slide-next .service-carousel-card-content {
+    overflow: visible;
+    height: 20vh;
+}
+
+.service-carousel .swiper-button-prev, .service-carousel .swiper-button-next {
+    color: #fdd501;
+}
+
+.service-carousel .swiper-pagination-bullet {
+    background: transparent !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    border: 2px solid #fdd501;
+    border-radius: 50% !important;
+    opacity: 0.4 !important;
+    margin-bottom: 2rem !important;
+    margin-right: 1.2rem !important;
+    transition: all 0.4s !important;
+}
+
+.service-carousel .swiper-pagination-bullet-active {
     background-color: #fdd501 !important;
     border: 2px solid #fdfdfd !important;
     opacity: 1 !important;

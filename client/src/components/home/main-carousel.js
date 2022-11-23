@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Navigation, Pagination} from "swiper";
+import {Autoplay, Pagination} from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,8 +15,9 @@ export default () => {
 
     return (
         <>
-            <div className={"carousel-container"}>
+            <div className={"main-carousel"}>
                 <Swiper
+                    loop={true}
                     direction={"vertical"}
                     pagination={{
                         clickable: true
@@ -28,10 +29,10 @@ export default () => {
                     modules={[Pagination, Autoplay]}
                     className={"mySwiper"}
                 >
-                    <SwiperSlide><div className={"carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image1})`}}></div></SwiperSlide>
-                    <SwiperSlide><div className={"carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image2})`}}></div></SwiperSlide>
-                    <SwiperSlide><div className={"carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image3})`}}></div></SwiperSlide>
-                    <SwiperSlide><div className={"carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image4})`}}></div></SwiperSlide>
+                    <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image1})`}}></div></SwiperSlide>
+                    <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image2})`}}></div></SwiperSlide>
+                    <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image3})`}}></div></SwiperSlide>
+                    <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image4})`}}></div></SwiperSlide>
                 </Swiper>
             </div>
 
