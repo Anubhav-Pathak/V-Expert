@@ -1,9 +1,10 @@
-export default (props) => {
+const Button = (props) => {
     return (
         <div>
-            <a className={`btn btn-full-${props.color}`}>
+            <a href="/" className={`btn btn-full-${props.color}`}>
                 {props.value}
             </a>
         </div>
     )
 }
+export default Button;

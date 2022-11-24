@@ -11,8 +11,7 @@ import image2 from "../../assests/images/pexels-anete-lusina-4792713.jpg"
 import image3 from "../../assests/images/pexels-field-engineer.jpg"
 import image4 from "../../assests/images/pexels-kindel-media-9875405.jpg"
 
-export default () => {
-
+const MainCarousel = () => {
     return (
         <>
             <div className={"main-carousel"}>
@@ -35,9 +34,7 @@ export default () => {
                     <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image4})`}}></div></SwiperSlide>
                 </Swiper>
             </div>
-
-
-
         </>
     )
 }
+export default MainCarousel;

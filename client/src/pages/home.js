@@ -4,7 +4,7 @@ import BtnFull from "../components/reuse/btn-full";
 import ServiceCarousel from "../components/home/service-carousel"
 import ServiceCarouselResponsive from "../components/home/serviceCarouselResponsive";
 
-export default () => {
+const Home = () => {
     return(
         <>
             <section id={"section-main"}>
@@ -80,3 +80,4 @@ export default () => {
         </>
     );
 }
+export default Home;

@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, Autoplay} from "swiper";
+import {Navigation, Pagination} from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,7 +11,7 @@ import image2 from "../../assests/images/pexels-anete-lusina-4792713.jpg"
 import image3 from "../../assests/images/pexels-field-engineer.jpg"
 import image4 from "../../assests/images/pexels-kindel-media-9875405.jpg"
 
-export default () => {
+const ServiceCarousel = () => {
 
     return (
         <>
@@ -69,9 +69,7 @@ export default () => {
                     </div></SwiperSlide>
                 </Swiper>
             </div>
-
-
-
         </>
     )
 }
+export default ServiceCarousel;

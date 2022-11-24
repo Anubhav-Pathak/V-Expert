@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import "../assests/css/header.css"
 import logo from "../assests/images/img.png"
 
-export default () => {
+const Header = () => {
     return(
         <header>
             <div className={"logo-container"}>
@@ -42,3 +42,4 @@ export default () => {
         </header>
     );
 }
+export default Header;
