@@ -4,12 +4,26 @@
     cursor: pointer;
     display: inline-block;
     border-radius: 12px;
-    color: #222222;
     border: 1px solid transparent;
     transition: all 0.4s;
 }
 
 .btn-full-yellow {
     background-color: #fdd501;
+    color: #222222;
     border: 1px solid #fdd501;
+    transition: 0.4s;
+}
+
+.btn-full-yellow:hover {
+    background-color: transparent;
+    color: #fdfdfd;
+}
+
+.hex {
+    margin-top: 70px;
+    width: 250px;
+    height: 200px;
+    background: #6C6;
+    position: relative;
 }
