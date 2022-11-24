@@ -15,11 +15,9 @@ export default () => {
 
     return (
         <>
-            <div className={"service-carousel"}>
+            <div className={"service-carousel-responsive"}>
                 <Swiper
                     loop={true}
-                    slidesPerView={3}
-                    spaceBetween={30}
                     pagination={{
                         clickable: true
                     }}

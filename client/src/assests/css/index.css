@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
     text-decoration: none;
