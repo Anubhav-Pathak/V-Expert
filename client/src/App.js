@@ -1,21 +1,15 @@
 import React from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import "./assests/css/index.css"
-import "./assests/css/reuse.css"
-import Main from "./pages/main";
-import Home from "./pages/home";
-
+import {Routes, Route} from "react-router-dom";
+import Header from "./components/layouts/header";
+import Home from "./components/pages/home/home";
 function App() {
     return (
-        <div className="App">
-            <BrowserRouter>
-                <Routes>
-                    <Route path={"/"} element={<Main />}>
-                        <Route path={"/"} element={<Home />} />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </div>
+        <>
+            <Header />
+            <Routes>
+                <Route path={"/"} element={<Home />} />
+            </Routes>
+        </>
     );
 }
 

@@ -1,8 +1,8 @@
 // import {Link} from "react-router-dom";
 import React from "react";
-import "../assests/css/tailwind/output.css";
-import "../assests/css/header.css";
-import logo from "../assests/images/img.png";
+import "../../assests/css/tailwind/output.css";
+import "../../assests/css/header.css";
+import logo from "../../assests/images/img.png";
 
 const Header = () => {
     const [header, setHeader] = React.useState(true);

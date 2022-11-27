@@ -1,8 +1,6 @@
-import "../assests/css/home.css"
-import Carousel from "../components/home/main-carousel";
-import BtnFull from "../components/reuse/btn-full";
-import ServiceCarousel from "../components/home/service-carousel"
-import ServiceCarouselResponsive from "../components/home/serviceCarouselResponsive";
+import Carousel from "./main-carousel";
+import ServiceCarousel from "./service-carousel"
+import ServiceCarouselResponsive from "./serviceCarouselResponsive";
 
 const Home = () => {
     return(
@@ -13,7 +11,6 @@ const Home = () => {
                     <h1 className={"section-heading"}>We Provide Best <span>Technical</span> Services That You Can Trust</h1>
                     <p className={"section-para"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi ipsam, distinctio nemo beatae tempore.
                         Make Appointment</p>
-                    <BtnFull value={'Make Appointment'} color={'yellow'}/>
                 </div>
             </section>
 
@@ -40,7 +37,6 @@ const Home = () => {
                             <li>Regular Service Call Out - 12 visits</li>
                             <li>Handyman Services - 3 visits</li>
                         </ul>
-                        <BtnFull value={"purchase"} color={"yellow"}/>
                     </div>
                     <div className={"product-card product-business"}>
                         <h2 className={"plan-heading"}>Business</h2>
@@ -53,7 +49,6 @@ const Home = () => {
                             <li>Regular Service Call Out - 12 visits</li>
                             <li>Handyman Services - 3 visits</li>
                         </ul>
-                        <BtnFull value={"purchase"} color={"yellow"}/>
                     </div>
                     <div className={"product-card product-first"}>
                         <h2 className={"plan-heading"}>First</h2>
@@ -66,17 +61,14 @@ const Home = () => {
                             <li>Regular Service Call Out - 12 visits</li>
                             <li>Handyman Services - 3 visits</li>
                         </ul>
-                        <BtnFull value={"purchase"} color={"yellow"}/>
                     </div>
                 </div>
                 <div className={"plans-about-container"}>
                     <h3 className={"section-begin"}>Our Services</h3>
                     <h1 className={"section-heading"}>What We Offer</h1>
                     <p className={"section-para"}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <BtnFull value={'Learn More'} color={'yellow'}/>
                 </div>
             </section>
-
         </>
     );
 }

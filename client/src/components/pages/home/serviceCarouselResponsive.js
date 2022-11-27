@@ -6,20 +6,18 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay"
 import "swiper/css/navigation"
 
-import image1 from "../../assests/images/img_1.png"
-import image2 from "../../assests/images/pexels-anete-lusina-4792713.jpg"
-import image3 from "../../assests/images/pexels-field-engineer.jpg"
-import image4 from "../../assests/images/pexels-kindel-media-9875405.jpg"
+import image1 from "../../../assests/images/img_1.png"
+import image2 from "../../../assests/images/pexels-anete-lusina-4792713.jpg"
+import image3 from "../../../assests/images/pexels-field-engineer.jpg"
+import image4 from "../../../assests/images/pexels-kindel-media-9875405.jpg"
 
 const ServiceCarousel = () => {
 
     return (
         <>
-            <div className={"service-carousel"}>
+            <div className={"service-carousel-responsive"}>
                 <Swiper
                     loop={true}
-                    slidesPerView={3}
-                    spaceBetween={30}
                     pagination={{
                         clickable: true
                     }}
@@ -69,6 +67,9 @@ const ServiceCarousel = () => {
                     </div></SwiperSlide>
                 </Swiper>
             </div>
+
+
+
         </>
     )
 }
