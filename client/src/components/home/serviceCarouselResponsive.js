@@ -11,7 +11,7 @@ import image2 from "../../assests/images/pexels-anete-lusina-4792713.jpg"
 import image3 from "../../assests/images/pexels-field-engineer.jpg"
 import image4 from "../../assests/images/pexels-kindel-media-9875405.jpg"
 
-export default () => {
+const ServiceCarousel = () => {
 
     return (
         <>
@@ -73,3 +73,4 @@ export default () => {
         </>
     )
 }
+export default ServiceCarousel;
