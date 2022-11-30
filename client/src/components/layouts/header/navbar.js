@@ -16,7 +16,7 @@ const Navbar = () => {
         setNavbar(!navbar);
     }
     return (
-        <nav id="nav" className="w-[100%] z-10 sticky top-0 py-2 lg:py-0 pl-4 flex items-center justify-between lg:justify-start bg-yellow-400 text-[16px]">
+        <nav id="nav" className="w-[100%] z-50 sticky top-0 py-2 lg:py-0 pl-4 flex items-center justify-between lg:justify-start bg-yellow-400 text-[16px]">
             <a href="/" className="mr-8"><img src={logo} alt="V-Expert" className="w-[150px] md:w-[200px] h-auto" /></a>
             <div className="lg:hidden pr-4 relative text-xl sm:text-3xl">
                 <i id="address" className="fa-solid fa-address-book cursor-pointer" onClick={toggleHeader}></i>

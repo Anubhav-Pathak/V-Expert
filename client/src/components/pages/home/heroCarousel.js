@@ -11,9 +11,9 @@ import image2 from "../../../assests/images/pexels-anete-lusina-4792713.jpg"
 import image3 from "../../../assests/images/pexels-field-engineer.jpg"
 import image4 from "../../../assests/images/pexels-kindel-media-9875405.jpg"
 
-const MainCarousel = () => {
+const HeroCarousel = () => {
     return (
-        <div className={"main-carousel"}>
+        <div className="hero-carousel relative w-full h-[100vh]">
             <Swiper
                 loop={true}
                 direction={"vertical"}
@@ -27,12 +27,12 @@ const MainCarousel = () => {
                 modules={[Pagination, Autoplay]}
                 className={"mySwiper"}
             >
-                <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image1})`}}></div></SwiperSlide>
-                <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image2})`}}></div></SwiperSlide>
-                <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image3})`}}></div></SwiperSlide>
-                <SwiperSlide><div className={"main-carousel-card"} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image4})`}}></div></SwiperSlide>
+                <SwiperSlide><div className={"hero-carousel-card"} style={{backgroundImage: `url(${image1})`}}></div></SwiperSlide>
+                <SwiperSlide><div className={"hero-carousel-card"} style={{backgroundImage: `url(${image2})`}}></div></SwiperSlide>
+                <SwiperSlide><div className={"hero-carousel-card"} style={{backgroundImage: `url(${image3})`}}></div></SwiperSlide>
+                <SwiperSlide><div className={"hero-carousel-card"} style={{backgroundImage: `url(${image4})`}}></div></SwiperSlide>
             </Swiper>
         </div>
     )
 }
-export default MainCarousel;
+export default HeroCarousel;
