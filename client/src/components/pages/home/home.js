@@ -1,6 +1,7 @@
 import Carousel from "./main-carousel";
 import ServiceCarousel from "./service-carousel"
 import ServiceCarouselResponsive from "./serviceCarouselResponsive";
+import "../../../assests/css/home.css"
 
 const Home = () => {
     return(
