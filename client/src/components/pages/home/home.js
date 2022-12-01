@@ -2,11 +2,13 @@ import ServiceCarousel from "./service-carousel"
 import ServiceCarouselResponsive from "./serviceCarouselResponsive";
 import "../../../assests/css/home.css"
 import Hero from "./hero";
+import Stats from "./stats";
 
 const Home = () => {
     return(
         <main>
             <Hero />
+            <Stats />
             <section id={"section-services"}>
                 <div className={"service-content"}>
                     <h3 className={"section-begin"}>Our Services</h3>
