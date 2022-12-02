@@ -6,11 +6,11 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay"
 import "swiper/css/navigation"
 
-import image1 from "../../assests/images/img_1.png"
-import image2 from "../../assests/images/pexels-anete-lusina-4792713.jpg"
-import image3 from "../../assests/images/pexels-field-engineer.jpg"
-import image4 from "../../assests/images/pexels-kindel-media-9875405.jpg"
-import BtnFull from "../reuse/btn-full";
+import image1 from "../../../assests/images/img_1.png"
+import image2 from "../../../assests/images/pexels-anete-lusina-4792713.jpg"
+import image3 from "../../../assests/images/pexels-field-engineer.jpg"
+import image4 from "../../../assests/images/pexels-kindel-media-9875405.jpg"
+// import BtnFull from "../reuse/btn-full";
 
 export default (props) => {
 
@@ -39,7 +39,7 @@ export default (props) => {
                         <div className={"service-carousel-card-content-info"}>
                             <h2>Ac Repair</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi ipsam, distinctio nemo beatae tempore.</p>
-                            <BtnFull color={'yellow'} value={'Book Now'} />
+                            <a href="/" className="py-4 px-8 bg-yellow-400 hover:bg-yellow-500 text-black text-xl lg:text-2xl rounded">Book Now</a>
                         </div>
                     </div>
                 </div></SwiperSlide>
@@ -51,7 +51,7 @@ export default (props) => {
                         <div className={"service-carousel-card-content-info"}>
                             <h2>Ac Repair</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi ipsam, distinctio nemo beatae tempore.</p>
-                            <BtnFull color={'yellow'} value={'Book Now'} />
+                            <a href="/" className="py-4 px-8 bg-yellow-400 hover:bg-yellow-500 text-black text-xl lg:text-2xl rounded">Book Now</a>
                         </div>
                     </div>
                 </div></SwiperSlide>
@@ -63,7 +63,7 @@ export default (props) => {
                         <div className={"service-carousel-card-content-info"}>
                             <h2>Ac Repair</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi ipsam, distinctio nemo beatae tempore.</p>
-                            <BtnFull color={'yellow'} value={'Book Now'} />
+                            <a href="/" className="py-4 px-8 bg-yellow-400 hover:bg-yellow-500 text-black text-xl lg:text-2xl rounded">Book Now</a>
                         </div>
                     </div>
                 </div></SwiperSlide>
@@ -75,7 +75,7 @@ export default (props) => {
                         <div className={"service-carousel-card-content-info"}>
                             <h2>Ac Repair</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi ipsam, distinctio nemo beatae tempore.</p>
-                            <BtnFull color={'yellow'} value={'Book Now'} />
+                            <a href="/" className="py-4 px-8 bg-yellow-400 hover:bg-yellow-500 text-black text-xl lg:text-2xl rounded">Book Now</a>
                         </div>
                     </div>
                 </div></SwiperSlide>
