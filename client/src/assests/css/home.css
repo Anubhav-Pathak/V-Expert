@@ -54,6 +54,34 @@
 /* ---------------------- Services --------------------- */
 /* ---------------------------------------------------------- */
 
+.package-card{
+    position: relative;
+    border: 2px solid rgb(250 204 21);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.package-card::after, .package-card::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250 204 21);
+}
+.package-card::before{
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    top: 0;
+    left: 0;
+}
+.package-card::after{
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    bottom: 0;
+    right: 0;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------- Services --------------------- */
+/* ---------------------------------------------------------- */
+
 #section-services {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/assests/images/pexels-field-engineer.jpg");
     height: 80vh;
