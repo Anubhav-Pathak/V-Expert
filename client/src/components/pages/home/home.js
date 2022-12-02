@@ -3,6 +3,7 @@ import "../../../assests/css/home.css"
 import Hero from "./hero";
 import Stats from "./stats";
 import Package from "./package";
+import About from "./about";
 
 const Home = () => {
     return(
@@ -10,6 +11,7 @@ const Home = () => {
             <Hero />
             <Stats />
             <Package />
+            <About />
             <section id={"section-services"}>
                 <div className={"service-content"}>
                     <h3 className={"section-begin"}>Our Services</h3>
