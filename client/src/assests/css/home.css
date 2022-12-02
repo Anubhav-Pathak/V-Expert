@@ -341,46 +341,6 @@
 /* ---------------------- Responsive Views --------------------- */
 /* ---------------------------------------------------------- */
 
-/*.service-carousel-responsive {*/
-/*    display: none;*/
-/*    height: 60vh;*/
-/*    background: transparent;*/
-/*}*/
-
-/*.service-carousel-responsive .swiper-slide {*/
-/*    background: transparent;*/
-/*}*/
-
-/*.service-carousel-responsive .service-carousel-card-content {*/
-/*    overflow: visible;*/
-/*    height: 20vh;*/
-/*}*/
-
-/*.service-carousel-responsive .swiper-button-prev, .service-carousel .swiper-button-next {*/
-/*    color: #fdd501;*/
-/*}*/
-
-/*.service-carousel-responsive .swiper-pagination-bullet {*/
-/*    background: transparent !important;*/
-/*    width: 1.5rem !important;*/
-/*    height: 1.5rem !important;*/
-/*    border: 2px solid #fdd501;*/
-/*    border-radius: 50% !important;*/
-/*    opacity: 0.4 !important;*/
-/*    margin-bottom: 2rem !important;*/
-/*    margin-right: 1.2rem !important;*/
-/*    transition: all 0.4s !important;*/
-/*}*/
-
-/*.service-carousel-responsive .swiper-pagination-bullet-active {*/
-/*    background-color: #fdd501 !important;*/
-/*    border: 2px solid #fdfdfd !important;*/
-/*    opacity: 1 !important;*/
-/*}*/
-
-/*.service-carousel-responsive .service-carousel-card {*/
-/*    border-radius: 0;*/
-/*}*/
 
 @media only screen and (max-width: 1180px) {
     :root {

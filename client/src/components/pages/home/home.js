@@ -1,5 +1,4 @@
 import ServiceCarousel from "./service-carousel"
-import ServiceCarouselResponsive from "./serviceCarouselResponsive";
 import "../../../assests/css/home.css"
 import Hero from "./hero";
 import Stats from "./stats";
