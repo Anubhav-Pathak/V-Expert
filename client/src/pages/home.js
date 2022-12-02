@@ -2,7 +2,6 @@ import "../assests/css/home.css"
 import Carousel from "../components/home/main-carousel";
 import BtnFull from "../components/reuse/btn-full";
 import ServiceCarousel from "../components/home/service-carousel"
-import ServiceCarouselResponsive from "../components/home/serviceCarouselResponsive";
 
 export default () => {
     return(
@@ -23,8 +22,13 @@ export default () => {
                     <h1 className={"section-heading"}>What We Offer</h1>
                     <p className={"section-para"}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <ServiceCarousel />
-                <ServiceCarouselResponsive />
+                <div className={"service-carousel"}>
+                    <ServiceCarousel count={2} />
+                </div>
+
+                <div className={"service-carousel-responsive"}>
+                    <ServiceCarousel count={1} />
+                </div>
             </section>
 
             <section id={"section-products"}>

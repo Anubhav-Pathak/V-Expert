@@ -111,9 +111,10 @@
 
 #section-services {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/assests/images/pexels-field-engineer.jpg");
-    height: 80vh;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -146,6 +147,7 @@
 }
 
 .service-content {
+    flex-basis: 40%;
     margin-top: 4rem;
     padding: 4rem 4rem 0;
 }
@@ -159,87 +161,84 @@
     padding: 0 4rem;
 }
 
+#section-services .swiper {
+    padding: 6rem 3rem;
+}
+
 .service-carousel-card {
-    width: 100%;
+    background: #fdd501;
     border-radius: 22px;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 90%;
+    min-height: 50vh;
+}
+
+.service-carousel-card-img {
+    height: 25vh;
     overflow: hidden;
 }
 
+.service-carousel-card-img img {
+    scale: 1.05;
+    min-height: 25vh;
+    opacity: 0.8;
+}
+
 .service-carousel-card-content {
+    background: #fdfdfd;
     position: relative;
-    height: 0;
-    overflow: hidden;
-    background: #fdd501;
-    transition: all 0.4s;
+
 }
 
 .service-carousel-card-content-info {
     position: absolute;
-    top: 0;
+    top: -1.5rem;
     left: 50%;
-    transform: translateX(-50%) translateY(-10%);
-    padding: 1rem 2rem 2rem;
-    border-radius: 18px;
+    row-gap: 1rem;
+    transform: translateX(-50%);
     width: 80%;
-    background-color: #fdfdfd;
-    transition: all 0.4s;
+    min-height: 20vh;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.service-carousel-card-img {
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
+#section-services .swiper-slide {
+    background: transparent;
 }
 
-.service-carousel h2 {
-    color: #fdd501;
-    margin-bottom: 1rem;
+.service-carousel .btn {
+    padding: 0.6rem 2.4rem;
 }
 
-.service-carousel .swiper-slide {
-    background: transparent !important;
-}
-
-.service-carousel .swiper-slide {
-    opacity: 0.6;
-    transition: all 0.4s;
-}
-
-.service-carousel .swiper-slide-next {
-    opacity: 1;
-}
-
-.service-carousel .swiper-slide-next .service-carousel-card-img {
-    height: 25vh;
-}
-
-.service-carousel .swiper-slide-next .service-carousel-card-content {
-    overflow: visible;
-    height: 20vh;
-}
-
-.service-carousel .swiper-button-prev, .service-carousel .swiper-button-next {
+#section-services .swiper-button-prev, #section-services .swiper-button-next {
     color: #fdd501;
 }
 
-.service-carousel .swiper-pagination-bullet {
+#section-services .swiper-pagination-bullet {
     background: transparent !important;
     width: 1.5rem !important;
     height: 1.5rem !important;
     border: 2px solid #fdd501;
     border-radius: 50% !important;
     opacity: 0.4 !important;
-    margin-bottom: 2rem !important;
     margin-right: 1.2rem !important;
     transition: all 0.4s !important;
 }
 
-.service-carousel .swiper-pagination-bullet-active {
+#section-services .swiper-pagination-bullet-active {
     background-color: #fdd501 !important;
     border: 2px solid #fdfdfd !important;
     opacity: 1 !important;
+}
+
+.service-carousel-responsive {
+    display: none;
 }
 
 /* ---------------------------------------------------------- */
@@ -247,7 +246,8 @@
 /* ---------------------------------------------------------- */
 
 #section-products {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -368,46 +368,46 @@
 /* ---------------------- Responsive Views --------------------- */
 /* ---------------------------------------------------------- */
 
-.service-carousel-responsive {
-    display: none;
-    height: 60vh;
-    background: transparent;
-}
+/*.service-carousel-responsive {*/
+/*    display: none;*/
+/*    height: 60vh;*/
+/*    background: transparent;*/
+/*}*/
 
-.service-carousel-responsive .swiper-slide {
-    background: transparent;
-}
+/*.service-carousel-responsive .swiper-slide {*/
+/*    background: transparent;*/
+/*}*/
 
-.service-carousel-responsive .service-carousel-card-content {
-    overflow: visible;
-    height: 20vh;
-}
+/*.service-carousel-responsive .service-carousel-card-content {*/
+/*    overflow: visible;*/
+/*    height: 20vh;*/
+/*}*/
 
-.service-carousel-responsive .swiper-button-prev, .service-carousel .swiper-button-next {
-    color: #fdd501;
-}
+/*.service-carousel-responsive .swiper-button-prev, .service-carousel .swiper-button-next {*/
+/*    color: #fdd501;*/
+/*}*/
 
-.service-carousel-responsive .swiper-pagination-bullet {
-    background: transparent !important;
-    width: 1.5rem !important;
-    height: 1.5rem !important;
-    border: 2px solid #fdd501;
-    border-radius: 50% !important;
-    opacity: 0.4 !important;
-    margin-bottom: 2rem !important;
-    margin-right: 1.2rem !important;
-    transition: all 0.4s !important;
-}
+/*.service-carousel-responsive .swiper-pagination-bullet {*/
+/*    background: transparent !important;*/
+/*    width: 1.5rem !important;*/
+/*    height: 1.5rem !important;*/
+/*    border: 2px solid #fdd501;*/
+/*    border-radius: 50% !important;*/
+/*    opacity: 0.4 !important;*/
+/*    margin-bottom: 2rem !important;*/
+/*    margin-right: 1.2rem !important;*/
+/*    transition: all 0.4s !important;*/
+/*}*/
 
-.service-carousel-responsive .swiper-pagination-bullet-active {
-    background-color: #fdd501 !important;
-    border: 2px solid #fdfdfd !important;
-    opacity: 1 !important;
-}
+/*.service-carousel-responsive .swiper-pagination-bullet-active {*/
+/*    background-color: #fdd501 !important;*/
+/*    border: 2px solid #fdfdfd !important;*/
+/*    opacity: 1 !important;*/
+/*}*/
 
-.service-carousel-responsive .service-carousel-card {
-    border-radius: 0;
-}
+/*.service-carousel-responsive .service-carousel-card {*/
+/*    border-radius: 0;*/
+/*}*/
 
 @media only screen and (max-width: 1180px) {
     :root {
@@ -418,17 +418,9 @@
         width: 60%;
     }
 
-    .service-carousel-card-img {
-        height: 25vh;
-    }
-
-    .service-carousel .swiper-slide-next .service-carousel-card-img {
-        height: 20vh;
-    }
-
     .service-carousel-card-content-info {
         width: 90%;
-        padding: 1rem 0.2rem;
+        padding: 1rem 0.5rem;
     }
 
     .service-carousel {
@@ -440,7 +432,6 @@
 @media only screen and (max-width: 1000px) {
     #section-services {
         display: block;
-        height: auto;
     }
 
     .service-content {
@@ -460,8 +451,8 @@
 
     .service-carousel {
         width: 100%;
-        height: 60vh;
-        margin: 4rem auto;
+        padding: 0;
+        margin-top: 4rem;
     }
 
     #section-products {
