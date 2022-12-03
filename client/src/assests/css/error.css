@@ -1,0 +1,15 @@
+#section-error {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/pexels-field-engineer.jpg");
+}
+
+.error-message {
+    position: absolute;
+    color: #fdfdfd;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 4rem;
+    transform: translate(-50%, -50%);
+}
+

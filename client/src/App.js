@@ -6,6 +6,7 @@ import Business from "./components/pages/package/business";
 import Economy from "./components/pages/package/economy";
 import First from "./components/pages/package/first";
 import Package from "./components/pages/package/package";
+import Error from "./components/pages/error/error";
 function App() {
     return (
         <>
@@ -16,6 +17,7 @@ function App() {
                 <Route path={"/packages/first"} element={<First />} />
                 <Route path={"/packages/economy"} element={<Economy />} />
                 <Route path={"/packages/business"} element={<Business />} />
+                <Route path={"*"} element={<Error />} />
             </Routes>
         </>
     );
