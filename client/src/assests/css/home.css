@@ -6,6 +6,22 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
+.whatsapp{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #fdd501;
+    padding: 0.8rem;
+    border-radius: 50%;
+    z-index: 99;
+    background: #fdd501;
+}
+
+.whatsapp img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
 /* ---------------------------------------------------------- */
 /* ---------------------- Hero Carousel --------------------- */
 /* ---------------------------------------------------------- */
@@ -362,7 +378,6 @@
     box-shadow: 0 1px 8px rgba(253, 213, 1, 0.5);
     z-index: 4;
 }
-
 
 
 /* ---------------------------------------------------------- */

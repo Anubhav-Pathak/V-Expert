@@ -4,6 +4,7 @@ import Hero from "./hero";
 import Stats from "./stats";
 import Package from "./package";
 import About from "./about";
+import Whatsapp from "./whatsapp";
 
 const Home = () => {
     return(
@@ -12,6 +13,7 @@ const Home = () => {
             <Stats />
             <Package />
             <About />
+            <Whatsapp />
             <section id={"section-services"}>
                 <div className={"service-content"}>
                     <h3 className={"section-begin"}>Our Services</h3>
