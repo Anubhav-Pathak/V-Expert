@@ -83,7 +83,26 @@
 /* ---------------------------------------------------------- */
 
 .about-img{
-    
+    position: relative;
+    background-image: url("../images/About.jpg");
+    background-position: center;
+}
+.about-img::after, .about-img::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.about-img::before{
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    top: 0;
+    left: 0;
+}
+.about-img::after{
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    bottom: 0;
+    right: 0;
 }
 
 
