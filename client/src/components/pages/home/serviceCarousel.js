@@ -20,7 +20,42 @@ const ServiceCarousel = (props) => {
             img: image1,
             icon: "fa-light fa-air-conditioner",
             name: "Air Conditioning",
-            description: "Lorem ipsum dolor sit amet consecutur adispiscis. Lorem dis ador la adispicsic Olympus"
+            description: "The installation, testing& commissioning, maintenance of the air conditioning and ventilation system shall be carried out by a specialist in order to ensure proper operation."
+        },
+        {
+            path: "plumbing",
+            img: image1,
+            icon: "fa-light fa-air-conditioner",
+            name: "Plumbing",
+            description: "The installation, testing& commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation"
+        },
+        {
+            path: "electrical",
+            img: image1,
+            icon: "fa-light fa-air-conditioner",
+            name: "Electrical",
+            description: "The installation, testing& commissioning, maintenance of the Electrical & ELV system shall be carried out by a specialist in order to ensure proper operation."
+        },
+        {
+            path: "plaster",
+            img: image1,
+            icon: "fa-light fa-air-conditioner",
+            name: "Plaster",
+            description: "We have tremendous experience and expertise in the field and are able to deliver outstanding plaster services. We undertake both official and residential requirements."
+        },
+        {
+            path: "floor-tiling",
+            img: image1,
+            icon: "fa-light fa-air-conditioner",
+            name: "Floor Tiling",
+            description: "We specialize in tiles, marble, stone masonry, fill and all kinds of decorating. We cater to all types of domestic, commercial or business tiling services."
+        },
+        {
+            path: "false-ceiling",
+            img: image1,
+            icon: "fa-light fa-air-conditioner",
+            name: "False Ceiling",
+            description: "We specialize in installing false (suspended) ceilings and partitioning covering all commercial and domestic areas across."
         },
     ];
 
