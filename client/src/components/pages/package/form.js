@@ -15,7 +15,7 @@ const Form = () => {
     if (!success || success === undefined) {
         navigate("/error", {replace: true});
     }
-    }, []);    
+    });    
     return (
         <div>
         <h1>{name}</h1>

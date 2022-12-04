@@ -1,7 +1,7 @@
 import "../../../assests/css/error.css"
 import React from "react";
 
-export default () => {
+const Error = () => {
     return (
         <section id={"section-error"}>
             <div className={"error-message"}>
@@ -11,3 +11,4 @@ export default () => {
         </section>
     )
 }
+export default Error;
