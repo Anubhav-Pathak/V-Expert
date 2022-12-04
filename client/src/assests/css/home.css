@@ -132,7 +132,7 @@
 /* ---------------------------------------------------------- */
 
 .service {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/assests/images/pexels-field-engineer.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero/hero1.jpg");
     height: 100vh;
     display: flex;
     justify-content: center;
