@@ -154,7 +154,7 @@
     transition: all 0.4s !important;
 }
 .service .swiper-button-prev, .service .swiper-button-next{
-    color: #fdd501;
+    color: black;
 }
 .service .swiper-pagination-bullet-active {
     background-color: #fdd501 !important;

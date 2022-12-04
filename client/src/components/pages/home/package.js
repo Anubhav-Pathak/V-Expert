@@ -28,7 +28,7 @@ const Package = () => {
         <section className='flex flex-col items-center justify-center py-12 px-4'>
             <div className='text-center mb-8'>
                 <h1 className='text-5xl sm:text-6xl mb-8'>Home Maintenance Package</h1>
-                <p className='text-md max-w-[1000px]'>This HTML file is a template. If you open it directly in the browser, you will see an empty page. You can add webfonts, meta tags, or analytics to this file.The build step will place the bundled scripts into the tag.</p>
+                <p className='text-md max-w-[600px] mx-auto'>Our Maintenance Package ensure a perfect balance of cost, quality and sustainability. We always operate in a transparent and fair manner.</p>
             </div>
             <div className='flex flex-wrap items-center justify-center gap-8'>
                 {packageCards.map((card)=>{

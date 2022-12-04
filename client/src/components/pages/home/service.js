@@ -11,7 +11,7 @@ const Service = () => {
                     <p className='text-md sm:text-lg mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis minus alias rem dolorum excepturi sed? Minima iusto ex architecto ipsam quibusdam harum est porro illum cumque, quas praesentium exercitationem?</p>
                 </div>
                 <div className={"service-carousel"}>
-                    <ServiceCarousel count={2} />
+                    <ServiceCarousel count={3} />
                 </div>
             </div>
         </section>
