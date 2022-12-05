@@ -133,43 +133,6 @@
 
 .service {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero/hero1.jpg");
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-begin {
-    display: inline-block;
-    color: #fdd501;
-    font-size: 1.2rem;
-}
-
-.section-begin::after {
-    content: "";
-    display: inline-block;
-    width: 10rem;
-    margin: 0 0 0 1.2rem;
-    transform: translateY(-50%);
-    border: 2px solid #fdd501;
-}
-
-#section-services h1 {
-    font-weight: 400;
-    color: #fdfdfd;
-    margin: 2rem 0;
-}
-
-.service-content p {
-    width: 80%;
-    color: #fdfdfd;
-    font-size: 1.3rem;
-    line-height: 145%;
-}
-
-.service-content {
-    margin-top: 4rem;
-    padding: 4rem 4rem 0;
 }
 
 /* ---------------------------------------------------------- */
@@ -318,17 +281,6 @@
     #section-products .section-para {
         margin: 1.5rem auto;
     }
-
-    .plans-about-container {
-        order: 1;
-        text-align: center;
-    }
-
-    .plans-container {
-        height: 50vh;
-        order: 2;
-    }
-
 }
 
 @media only screen and (max-width: 720px) {
