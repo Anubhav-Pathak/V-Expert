@@ -5,7 +5,7 @@ import V2 from '../../../assests/images/V2.svg';
 import V4 from '../../../assests/images/V4.svg';
 const About = () => {
     return (
-        <section className='py-12 px-4 flex flex-col gap-8 md:flex-row max-w-[1400px] items-center justify-center mx-auto'>
+        <section id="About" className='py-12 px-4 flex flex-col gap-8 md:flex-row max-w-[1400px] items-center justify-center mx-auto'>
             <div className='about-img max-w-[500px]'><img src={aboutImg} alt="About Us" /></div>
             <article className='max-w-[500px] md:max-w-[800px]'>
                 <p className='flex items-center text-xl mt-3'><p>Welcome to V-Expert</p><span className='w-[50px] md:w-[150px] h-1 bg-yellow-400 ml-4 mt-2'></span></p>

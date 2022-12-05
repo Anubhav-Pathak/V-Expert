@@ -3,7 +3,7 @@ import ServiceCarousel from './serviceCarousel'
 
 const Service = () => {
     return (
-        <section className='px-4 service min-h-screen w-screen overflow-hidden flex items-center justify-center'>
+        <section id="services" className='px-4 service min-h-screen w-screen overflow-hidden flex items-center justify-center'>
             <div className='py-12 px-4 flex flex-col lg:flex-row lg:gap-8 w-full md:place-items-center mx-auto'>
                 <div className='text-white'>
                     <p className='flex items-center text-xl mt-3'><p>Our Services</p><span className='w-[50px] md:w-[150px] h-1 bg-yellow-400 ml-4 mt-2'></span></p>

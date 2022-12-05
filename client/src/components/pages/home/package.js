@@ -25,7 +25,7 @@ const Package = () => {
         },
     ];
     return (
-        <section className='flex flex-col items-center justify-center py-12 px-4'>
+        <section id="packages" className='flex flex-col items-center justify-center py-12 px-4'>
             <div className='text-center mb-8'>
                 <h1 className='text-5xl sm:text-6xl mb-8'>Home Maintenance Package</h1>
                 <p className='text-md max-w-[600px] mx-auto'>Our Maintenance Package ensure a perfect balance of cost, quality and sustainability. We always operate in a transparent and fair manner.</p>
