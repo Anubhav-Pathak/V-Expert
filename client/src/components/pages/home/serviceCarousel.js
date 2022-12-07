@@ -11,9 +11,6 @@ import plumbing from "../../../assests/images/services/plumbing.jpg"
 import plastering from "../../../assests/images/services/plastring.jpg"
 import airCond from "../../../assests/images/services/airCond.jpg"
 import falseCeiling from "../../../assests/images/services/falseCeling.jpg"
-// import image2 from "../../../assests/images/pexels-anete-lusina-4792713.jpg"
-// import image3 from "../../../assests/images/pexels-field-engineer.jpg"
-// import image4 from "../../../assests/images/pexels-kindel-media-9875405.jpg"
 import ServiceSlide from "./serviceSlide";
 
 const ServiceCarousel = (props) => {
