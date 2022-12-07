@@ -27,17 +27,17 @@ const Footer = () => {
                 </div>
                 <div className='flex gap-8'>
                     <ul className="lg:row-span-full">
-                        <h6 className="uppercase text-yellow-500 font-semibold mb-4 flex">Services</h6>
+                        <h6 className="uppercase text-yellow-400 font-bold mb-4 flex">Services</h6>
                         {links.map((link)=>{return (<FooterLink name={link}/>)})}    
                     </ul>
 
                     <ul className="lg:row-span-full">
-                        <h6 className="uppercase text-yellow-500 font-semibold mb-4 flex">Packages</h6>
+                        <h6 className="uppercase text-yellow-400 font-bold mb-4 flex">Packages</h6>
                         {packages.map((link)=>{return (<FooterLink name={link}/>)})}
                     </ul>
 
                     <ul className="lg:row-span-full">
-                        <h6 className="uppercase text-yellow-500 font-semibold mb-4 flex">Useful Links</h6>
+                        <h6 className="uppercase text-yellow-400 font-bold mb-4 flex">Useful Links</h6>
                         <li><a href="#about" className="">About</a></li>
                         <li><a href="#package" className="">Packages</a></li>
                         <li><a href="#service" className="">Services</a></li>
@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
 
                 <div className="max-w-[300px]">
-                    <h6 className="uppercase text-yellow-500 font-semibold mb-4 flex">Contact</h6>
+                    <h6 className="uppercase text-yellow-400 font-bold mb-4 flex">Contact</h6>
                     <p className="flex items-center"><i class="fa-solid fa-location-dot mr-2"></i>534,536, 5th Floor Business village, Deira clock tower - Deira Dubai, UAE.</p>
                     <p className="flex items-center"><i class="fa-regular fa-envelope mr-2"></i>cs@vexpert.ae</p>
                     <p className="flex items-center"><i class="fa-solid fa-phone mr-2"></i>+971 508446765, +971 508446737</p>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             <div className="text-center p-6 bg-stone-900 text-white">
                 <span>© 2022 Copyright:</span>
-                <a className=" font-semibold" href="https://tailwind-elements.com/">V Expert</a>
+                <a className=" font-bold" href="https://tailwind-elements.com/">V Expert</a>
             </div>
         </footer>
     )
