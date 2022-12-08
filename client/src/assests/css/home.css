@@ -98,6 +98,11 @@
     bottom: 0;
     right: 0;
 }
+.package-card:hover::after , .package-card:hover::before{
+    width: 60px;
+    height: 60px;
+    transition: .3s;
+}
 
 /* ---------------------------------------------------------- */
 /* ---------------------- About --------------------- */
@@ -131,8 +136,8 @@
 /* ---------------------- Services --------------------- */
 /* ---------------------------------------------------------- */
 
-.service {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero/hero1.jpg");
+#services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
 /* ---------------------------------------------------------- */
@@ -304,6 +309,9 @@
 
     .plans-container {
         height: auto;
+    }
+    .hero-carousel .swiper-pagination{
+        display: none;
     }
 }
 

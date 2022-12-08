@@ -9,7 +9,7 @@ const Footer = () => {
     const links = ["Air Conditioning","Plumbing","Electrical","Plaster","Floor Tiling","Water Heaters","False Ceiling"];
     const packages = ["First","Business","Economy"];
     return (
-        <footer id="Contact" className='flex flex-col'>
+        <footer id="Contact" className='flex flex-col bg-stone-900'>
             <div className="flex justify-center sm:justify-between items-center gap-8 flex-wrap py-8 px-4 bg-yellow-400">
                 <p className='text-xl text-center'>Get connected with us on social media</p>
                 <ul className="flex items-center justify-center text-2xl">
@@ -19,7 +19,7 @@ const Footer = () => {
                     <li><i class="fa-brands fa-linkedin"></i></li>
                 </ul>
             </div>
-            <div className="px-4 py-8 flex flex-wrap items-start justify-center gap-8 mx-auto">
+            <div className="px-4 py-8 flex flex-wrap items-start justify-center gap-8 mx-auto text-white">
 
                 <div className="flex flex-col items-start justify-center md:justify-start max-w-[400px]">
                     <img src={footerLogo} alt="V Expert" />
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="text-center p-6 bg-stone-900 text-white">
+            <div className="text-center p-6 bg-yellow-400 text-black">
                 <span>© 2022 Copyright:</span>
                 <a className=" font-bold" href="https://tailwind-elements.com/">V Expert</a>
             </div>
