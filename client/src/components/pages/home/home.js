@@ -5,6 +5,7 @@ import Package from "./package";
 import About from "./about";
 import Service from "./service";
 import Whatsapp from "./whatsapp";
+import Testimonials from "./testimonials";
 
 const Home = () => {
     return(
@@ -15,6 +16,7 @@ const Home = () => {
             <About />
             <Service />
             <Whatsapp />
+            <Testimonials />
         </main>
     );
 }
