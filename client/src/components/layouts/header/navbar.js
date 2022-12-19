@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../../../assests/images/img.png";
 import Dropdown from './dropdown';
+import {services, packages} from '../../../data/data.js'
 // import Search from './search';
 const Navbar = () => {
     const [header, setHeader] = React.useState(true);
@@ -42,8 +43,8 @@ const Navbar = () => {
                 <div className="py-8 lg:py-0 flex flex-col lg:flex-row gap-12 lg:gap-0">
                     <a href="/" className="py-2 px-4 mr-4">Home</a>
                     <a href="#About" className="py-2 px-4 mr-4">About</a>
-                    <Dropdown name="Packages" links={["Economy","Business","First"]}/>
-                    <Dropdown name="Services" links={["Air Conditioning","Plumbing","Electrical","Plaster","Floor Tiling","Water Heaters","False Ceiling","Carpentry"]}/>
+                    <Dropdown name="Packages" links={packages}/>
+                    <Dropdown name="Services" links={services}/>
                     <a href="#Contact" className="py-2 px-4 mr-4">Contact</a>
                 </div>
                 <div class="hidden lg:inline">

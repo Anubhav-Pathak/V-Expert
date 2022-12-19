@@ -5,7 +5,7 @@ import Package from "./package";
 import About from "./about";
 import Service from "./service";
 import Whatsapp from "./whatsapp";
-import Testimonials from "./testimonials";
+import Testimony from "./testimony"
 
 const Home = () => {
     return(
@@ -15,8 +15,8 @@ const Home = () => {
             <Package />
             <About />
             <Service />
+            <Testimony />
             <Whatsapp />
-            <Testimonials />
         </main>
     );
 }

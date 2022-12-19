@@ -1,13 +1,12 @@
 import React from 'react'
 import footerLogo from "../../../assests/images/Footer-Logo.png";
+import {services, packages} from "../../../data/data.js"
 const FooterLink = (props) => {
     return (
-        <li><a className='mb-4' href={`/${props.name.toLowerCase()}/${props.name.toLowerCase().replace(/ /g , "-")}`} >{props.name}</a></li>
+        <li><a className='mb-4' href={`/${props.name.toLowerCase()}/${props.link.name.toLowerCase().replace(/ /g , "-")}`} >{props.link.name}</a></li>
     )
 }
 const Footer = () => {
-    const links = ["Air Conditioning","Plumbing","Electrical","Plaster","Floor Tiling","Water Heaters","False Ceiling"];
-    const packages = ["First","Business","Economy"];
     return (
         <footer id="Contact" className='flex flex-col bg-stone-900'>
             <div className="flex justify-center sm:justify-between items-center gap-8 flex-wrap py-8 px-4 bg-yellow-400">
@@ -28,12 +27,12 @@ const Footer = () => {
                 <div className='flex gap-8'>
                     <ul className="lg:row-span-full">
                         <h6 className="uppercase text-yellow-400 font-bold mb-4 flex">Services</h6>
-                        {links.map((link)=>{return (<FooterLink name={link}/>)})}    
+                        {services.map((link)=>{return (<FooterLink name={"services"} link={link}/>)})}    
                     </ul>
 
                     <ul className="lg:row-span-full">
                         <h6 className="uppercase text-yellow-400 font-bold mb-4 flex">Packages</h6>
-                        {packages.map((link)=>{return (<FooterLink name={link}/>)})}
+                        {packages.map((link)=>{return (<FooterLink name={"packages"} link={link}/>)})}
                     </ul>
 
                     <ul className="lg:row-span-full">
@@ -53,8 +52,7 @@ const Footer = () => {
 
             </div>
             <div className="text-center p-6 bg-yellow-400 text-black">
-                <span>© 2022 Copyright:</span>
-                <a className=" font-bold" href="https://tailwind-elements.com/">V Expert</a>
+                <a className="font-bold" href='/'><span className='font-light'>© 2022 Copyright </span>V Expert</a>
             </div>
         </footer>
     )
