@@ -12,10 +12,10 @@ const Footer = () => {
             <div className="flex justify-center sm:justify-between items-center gap-8 flex-wrap py-8 px-4 bg-yellow-400">
                 <p className='text-xl text-center'>Get connected with us on social media</p>
                 <ul className="flex items-center justify-center text-2xl">
-                    <li className='mr-4'><i class="fa-brands fa-facebook-f"></i></li>
-                    <li className='mr-4'><i class="fa-brands fa-twitter"></i></li>
-                    <li className='mr-4'><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li className='mr-4'><a href='https://www.facebook.com/VETS2022'><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li className='mr-4'><a href='/'><i class="fa-brands fa-twitter"></i></a></li>
+                    <li className='mr-4'><a href='/'><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href='https://linkedin.com/in/v-expert-technical-services-est-329887259'><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
             <div className="px-4 py-8 flex flex-wrap items-start justify-center gap-8 mx-auto text-white">

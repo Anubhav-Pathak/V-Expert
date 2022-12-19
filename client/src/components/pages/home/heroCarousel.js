@@ -6,10 +6,10 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay"
 import "swiper/css/navigation"
 
-import image1 from "../../../assests/images/services/airCond.jpg"
-import image2 from "../../../assests/images/services/plumbing.jpg"
-import image3 from "../../../assests/images/services/plastring.jpg"
-import image4 from "../../../assests/images/services/falseCeling.jpg"
+import image1 from "../../../assests/images/services/AirConditioning.jpg"
+import image2 from "../../../assests/images/services/Plumbing.jpg"
+import image3 from "../../../assests/images/services/Painting.jpg"
+import image4 from "../../../assests/images/services/FalseCeiling.jpg"
 
 const HeroCarousel = () => {
     return (
