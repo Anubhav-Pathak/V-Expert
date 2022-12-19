@@ -63,12 +63,12 @@ export const packages = [
 
 export const reviews = [
     {
-        name: "John Doe",
+        name: "Mark",
         rating: 5,
         review: "Lorem ipsum dolor sit amet, pharetra facilisis orci, nec condimentum arcu scelerisque sed. Sed et mauris eros. Pellentesque tincidunt augue quis tempor ornare.",
     },
     {
-        name: "John Doe",
+        name: "Harry",
         rating: 4,
         review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum volutpat ligula ac commodo. Suspendisse sit amet eros turpis. Donec suscipit tincidunt turpis non euismod. Integer pharetra facilisis orci, nec condimentum arcu scelerisque sed. Sed et mauris eros. Pellentesque tincidunt augue quis tempor ornare.",
     },
