@@ -1,18 +1,18 @@
 import React from 'react'
 const PackageCard = (props) => {
     return (
-        <article className='package-card flex flex-col items-center gap-4 text-left px-8 py-4 relative h-[300px] lg:h-[400px] justify-center'>
+        <article className='text-blue package-card flex flex-col items-center gap-4 text-left px-8 py-4 relative h-[300px] lg:h-[400px] justify-center'>
             <h3 className='text-2xl absolute top-4'>{props.type}</h3>
             <div className='mb-6'>
                 <p className='text-md'>Annual Package</p>
-                <h1 className='text-6xl text-center'>{props.price}<strong className='text-sm ml-2'>AED / year</strong></h1>
+                <h1 className='text-6xl text-center text-gold'>{props.price}<strong className='text-sm ml-2 text-blue'>AED / year</strong></h1>
             </div>
             <ul className='text-md leading-relaxed'>
                 {(props.pm) ? <li>Preventive Maintenance - {props.pm}</li> : ""}
                 {(props.rsc) ? <li>Regular Service Callout - {props.rsc}</li> : ""}
                 {(props.hs) ? <li>Handyman Services - {props.hs}</li> : ""}
             </ul>
-            <a href='/package' className='py-4 px-6 bg-yellow-400 absolute bottom-4 rounded-md text-xl'>Book Now</a>
+            <a href='/package' className='py-4 px-6 bg-blue absolute bottom-4 rounded-md text-xl text-white'>Book Now</a>
         </article>
     )
 }
@@ -40,7 +40,7 @@ const Package = () => {
         },
     ];
     return (
-        <section id="packages" className='flex flex-col items-center justify-center py-12 px-4'>
+        <section id="packages" className='flex flex-col items-center justify-center py-12 px-4 text-blue'>
             <div className='text-center mb-8'>
                 <h1 className='text-5xl sm:text-6xl mb-8'>Home Maintenance Package</h1>
                 <p className='text-md max-w-[600px] mx-auto'>Our Maintenance Package ensure a perfect balance of cost, quality and sustainability. We always operate in a transparent and fair manner.</p>

@@ -3,7 +3,10 @@
 /* ---------------------------------------------------------- */
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.hero span {
+    -webkit-text-stroke: 0.2px white;
 }
 
 
@@ -15,11 +18,11 @@
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    border: 1px solid #fdd501;
+    border: 1px solid #031F60;
     padding: 0.8rem;
     border-radius: 50%;
     z-index: 99;
-    background: #fdd501;
+    background: #031F60;
 }
 
 .whatsapp img {
@@ -50,7 +53,7 @@
     background: transparent !important;
     width: 1.5rem !important;
     height: 1.5rem !important;
-    border: 2px solid #fdd501;
+    border: 2px solid #031F60;
     border-radius: 50% !important;
     opacity: 0.4 !important;
     margin-bottom: 1.2rem !important;
@@ -58,7 +61,7 @@
     transition: all 0.4s !important;
 }
 .hero-carousel .swiper-pagination-bullet-active {
-    background-color: #fdd501 !important;
+    background-color: #031F60 !important;
     border: 2px solid #fdfdfd !important;
     opacity: 1 !important;
 }
@@ -77,7 +80,7 @@
 
 .package-card{
     position: relative;
-    border: 2px solid rgb(250 204 21);
+    border: 2px solid #031F60;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -86,8 +89,28 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(250 204 21);
+    border: 2px solid #031F60;
+    background-color: #031F60;
 }
+
+.package-card:nth-child(2){
+    border: 2px solid white;
+    color: white;
+    background-color: #031F60;
+}
+.package-card:nth-child(2) strong{
+    color: white;
+}
+.package-card:nth-child(2) a{
+    background-color: white;
+    color: #031F60;
+}
+.package-card:nth-child(2)::after, .package-card:nth-child(2)::before{
+    background-color: white;
+    border: 2px solid #031F60;
+}
+
+
 .package-card::before{
     clip-path: polygon(0 0, 0 100%, 100% 0);
     top: 0;
@@ -110,35 +133,12 @@
 
 .about-img{
     position: relative;
-    background-image: url("../images/About.jpg");
+    background-image: url("../images/services/FalseCeiling.jpg");
     background-position: center;
-}
-.about-img::after, .about-img::before{
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-}
-.about-img::before{
-    clip-path: polygon(0 0, 0 100%, 100% 0);
-    top: 0;
-    left: 0;
-}
-.about-img::after{
-    clip-path: polygon(100% 100%, 0 100%, 100% 0);
-    bottom: 0;
-    right: 0;
+    clip-path: polygon(0 20%, 20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+    border: 10px solid #eab308;
 }
 
-
-/* ---------------------------------------------------------- */
-/* ---------------------- Services --------------------- */
-/* ---------------------------------------------------------- */
-
-#services {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-}
 
 /* ---------------------------------------------------------- */
 /* ---------------------- Service Carousel --------------------- */
@@ -155,7 +155,7 @@
 }
 
 .service-carousel-card {
-    background: #fdd501;
+    background: #031F60;
     border-radius: 22px;
     overflow: hidden;
     width: 90%;
@@ -207,14 +207,18 @@
 }
 
 .service .swiper-button-prev, .service .swiper-button-next {
-    color: #fdd501;
+    color: #eab308;
+    background-color: #031F60;
+    padding: 20px;
+    border: 2px solid #eab308;
+    border-radius: 50%;
 }
 
 .service .swiper-pagination-bullet {
     background: transparent !important;
     width: 1.5rem !important;
     height: 1.5rem !important;
-    border: 2px solid #fdd501;
+    border: 2px solid #031F60;
     border-radius: 50% !important;
     opacity: 0.4 !important;
     margin-right: 1.2rem !important;
@@ -222,7 +226,7 @@
 }
 
 .service .swiper-pagination-bullet-active {
-    background-color: #fdd501 !important;
+    background-color: #031F60 !important;
     border: 2px solid #fdfdfd !important;
     opacity: 1 !important;
 }

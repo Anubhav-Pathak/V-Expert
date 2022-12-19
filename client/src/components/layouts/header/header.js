@@ -6,7 +6,7 @@ import Navbar from "./navbar";
 const Header = () => {
     return(
         <>
-            <header className={`hidden lg:static p-4 lg:p-0 lg:py-3 lg:px-4 lg:flex lg:flex-row lg:items-center lg:top-0 lg:justify-end lg:bg-stone-900 lg:text-white text-[14px] lg:text-[16px]`}>
+            <header className={`hidden lg:static p-4 lg:p-0 lg:py-3 lg:px-4 lg:flex lg:flex-row lg:items-center lg:top-0 lg:justify-end lg:bg-blue lg:text-white text-[14px] lg:text-[16px]`}>
                 <div className="flex items-center lg:justify-center">
                     <i className="fa-solid fa-phone"></i>
                     <a href='tel:+971508446765' className="ml-1">+971 508446765, +971 508446737</a>
