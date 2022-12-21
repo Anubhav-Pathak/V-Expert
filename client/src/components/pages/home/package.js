@@ -20,20 +20,20 @@ const Package = () => {
     const packageCards = [
         {
             type: "Economy",
-            price: "1,000",
+            price: "1,099",
             pm: 1,
             rsc: 6
         },
         {
             type: "Buisness",
-            price: "2,000",
+            price: "2,099",
             pm: 2,
             rsc: 6,
             hs: 2
         },
         {
             type: "First",
-            price: "3,000",
+            price: "3,099",
             pm: 3,
             rsc: 12,
             hs: 3
@@ -41,8 +41,8 @@ const Package = () => {
     ];
     return (
         <section id="packages" className='flex flex-col items-center justify-center py-12 px-4 text-blue'>
-            <div className='text-center mb-8'>
-                <h1 className='text-5xl sm:text-6xl mb-8'>Home Maintenance Package</h1>
+            <div className='text-center mb-8 bg-white p-4 rounded-lg border-2 border-blue'>
+                <h1 className='text-5xl sm:text-6xl mb-8'>Annual Maintenance Contract Package</h1>
                 <p className='text-md max-w-[600px] mx-auto'>Our Maintenance Package ensure a perfect balance of cost, quality and sustainability. We always operate in a transparent and fair manner.</p>
             </div>
             <div className='flex flex-wrap items-center justify-center gap-8'>

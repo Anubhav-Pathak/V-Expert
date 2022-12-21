@@ -1,34 +1,20 @@
 import {useEffect, useState} from "react";
-
-export default ({price}) => {
-
+const Form = ({price}) => {
     const [form, setForm] = useState({
         size1: String,
         size2: String,
         size3: String,
         price: Number
     })
-
     const handleChange = (e) => {
-        console.log(e.target.value);
-
         setForm(prevState => {
             return {
                 ...prevState,
                 [e.target.name]: e.target.value,
-
-                // Logic for price change
-            //     Else make await this function
-
             }
         })
     }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    //     Backend Request
-    }
-
+    const handleSubmit = (e) => e.preventDefault();
     useEffect(() => {
         setForm(prevState => {
             return {
@@ -36,7 +22,7 @@ export default ({price}) => {
                 price: price,
             }
         })
-    },[]);
+    },[price]);
 
     return (
         <div>
@@ -59,3 +45,5 @@ export default ({price}) => {
         </div>
     )
 }
+
+export default Form

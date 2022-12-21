@@ -10,7 +10,7 @@ import { services } from "../../../data/data";
 
 const ServiceSlide = (props) => {
     return (
-        <a href={`/${props.path}`} className='flex flex-col relative bg-blue border-2 border-blue rounded-lg overflow-hidden'>
+        <a href={`/services/${props.path}`} className='flex flex-col relative bg-blue border-2 border-blue rounded-lg overflow-hidden'>
             <img src={props.img} alt="Service" className='absolute top-0 left-0' height="150px" />
             <div className='relative bg-white z-10 mt-[120px] mb-4 mx-4 text-center p-4 rounded h-[200px]'>
                 <i class={`fa-solid ${props.icon} fa-lg absolute top-[-30px] left-0 bg-gold w-[40px] h-[40px] flex items-center justify-center rounded-full`}></i>

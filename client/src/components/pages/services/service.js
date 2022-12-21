@@ -8,7 +8,7 @@ import Form from "./form";
 export default () => {
 
     const {name} = useParams();
-    const selectedService = services.find(s => s.name.toLowerCase() === name);
+    const selectedService = services.find(s => s.path === name);
 
     return (
         <section id={"section-service"}>

@@ -92,7 +92,9 @@
     border: 2px solid #031F60;
     background-color: #031F60;
 }
-
+.package-card{
+    background-color: white;
+}
 .package-card:nth-child(2){
     border: 2px solid white;
     color: white;
@@ -144,6 +146,10 @@
 /* ---------------------- Service Carousel --------------------- */
 /* ---------------------------------------------------------- */
 
+main{
+    background-image: url("../images/Background.jpg");
+    background-attachment: fixed;
+}
 
 .service-carousel {
     width: 60%;
@@ -207,17 +213,13 @@
 }
 
 .service .swiper-button-prev, .service .swiper-button-next {
-    color: #eab308;
-    background-color: #031F60;
-    padding: 20px;
-    border: 2px solid #eab308;
-    border-radius: 50%;
+    color: #eab308
 }
 
 .service .swiper-pagination-bullet {
     background: transparent !important;
-    width: 1.5rem !important;
-    height: 1.5rem !important;
+    width: 1rem !important;
+    height: 1rem !important;
     border: 2px solid #031F60;
     border-radius: 50% !important;
     opacity: 0.4 !important;
@@ -234,7 +236,14 @@
 .service-carousel-mid, .service-carousel-mob {
     display: none;
 }
-
+.service .swiper-pagination-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    background-color: white;
+    border-radius: 8px;
+}
 /* ---------------------------------------------------------- */
 /* ---------------------- Testimony --------------------- */
 /* ---------------------------------------------------------- */

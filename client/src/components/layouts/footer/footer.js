@@ -3,7 +3,7 @@ import footerLogo from "../../../assests/images/Footer-Logo.png";
 import {services, packages} from "../../../data/data.js"
 const FooterLink = (props) => {
     return (
-        <li><a className='mb-4' href={`/${props.name.toLowerCase()}/${props.link.name.toLowerCase().replace(/ /g , "-")}`} >{props.link.name}</a></li>
+        <li><a className='mb-4' href={`/${props.name.toLowerCase()}/${props.link.path}`} >{props.link.name}</a></li>
     )
 }
 const Footer = () => {

@@ -39,7 +39,7 @@ const Navbar = () => {
                 {/* <Search show={search}/> */}
                 <i className={`fa-solid ${navbar ? 'fa-bars':'fa-xmark'} cursor-pointer`} onClick={toggleNavbar}></i>
             </div>
-            <div className={`navlinks ${navbar ? "hidden" : "absolute lg:static left-0 top-[43px] block min-h-[100vh] lg:min-h-fit w-[250px] lg:w-auto bg-blue"} lg:mt-4 lg:pl-6 lg:pr-4 lg:py-2 lg:flex-grow lg:flex lg:items-center lg:justify-between lg:rounded-tl-full text-white lg:bg-blue`}>
+            <div className={`navlinks ${navbar ? "hidden" : "absolute lg:static left-0 top-0 block min-h-[100vh] lg:min-h-fit w-[250px] lg:w-auto bg-blue"} lg:mt-4 lg:pl-6 lg:pr-4 lg:py-2 lg:flex-grow lg:flex lg:items-center lg:justify-between lg:rounded-tl-full text-white lg:bg-blue`}>
                 <div className="py-8 lg:py-0 flex flex-col lg:flex-row gap-12 lg:gap-0">
                     <a href="/" className="py-2 px-4 mr-4">Home</a>
                     <a href="#About" className="py-2 px-4 mr-4">About</a>

@@ -8,7 +8,7 @@ const Dropdown = (props) => {
                 {
                     props.links.map((link)=>{
                         return (
-                            <a href={`/${props.name.toLowerCase()}/${link.name.toLowerCase().replace(/ /g , "-")}`} className="py-1 hover:bg-gray pl-2">{link.name}</a>
+                            <a href={`/${props.name.toLowerCase()}/${link.path}`} className="py-1 hover:bg-gray pl-2">{link.name}</a>
                         )
                     })
                 }
