@@ -17,14 +17,26 @@ export const services = [
         img: airConditioning,
         icon: "fa-screwdriver",
         name: "Air Conditioning",
-        description: "The installation, testing & commissioning, maintenance of the air conditioning and ventilation system shall be carried out by a specialist in order to ensure proper operation."
+        description: "The installation, testing & commissioning, maintenance of the air conditioning and ventilation system shall be carried out by a specialist in order to ensure proper operation.",
+        details: {
+            para1: "The installation, testing & commissioning, maintenance of the air conditioning and ventilation system shall be carried out by a specialist in order to ensure proper operation",
+            para2: "V-Expert provides high-quality air conditioning, ventilation, and filtration system installation services to private and corporate clients.",
+            label: "Our teams of qualified technicians are highly qualified to install/replace the range of air conditioning, ventilation and filtration systems, notably: ",
+            features: ["Design/Build Installations", "Chilled Water Piping Works", "All types of Duct Works", "All types of Grills", "Exhaust Fans", "FCU/FAHU/AHU/Chillers", "Chilled Water Pumps", "HEXs", "Fire Dampers", "Central cooling system", "DX cooling system", "District cooling system", "Smoke and pressure extract system"],
+        }
     },
     {
         path: "electrical",
         img: electrical,
         icon: "fa-screwdriver",
         name: "Electrical",
-        description: "The installation, testing & commissioning, maintenance of the Electrical & ELV system shall be carried out by a specialist in order to ensure proper operation."
+        description: "The installation, testing & commissioning, maintenance of the Electrical & ELV system shall be carried out by a specialist in order to ensure proper operation.",
+        details: {
+            para1: "The installation, testing & commissioning, maintenance of the Electrical & ELV system shall be carried out by a specialist in order to ensure proper operation",
+            para2: "V-Expert provides high-quality Electrical & ELV system installation services to private and corporate clients",
+            label: "Our technicians are highly qualified to install/replace the range of air Electrical & ELV systems, notably: ",
+            features: ["Design/Build Installations & Maintenance","Bus Bar , MDB , SMDB,MCC& DB installations","Power & Lighting Wiring and accessories installations","Voice/Data/ Fiber Optics Systems","Lighting Control Systems","Intercom Systems","Inverters","Security Systems","Solar Panels","Meter Box","Power Cables Installation","Containments - Tray , trucking & Ladder","PVC & GI Conduit Installations","Cables glanding & Terminations"],
+        }
     },
     {
         path: "plumbing",

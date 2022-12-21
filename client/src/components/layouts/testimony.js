@@ -1,5 +1,5 @@
 import React from 'react'
-import {reviews} from "../../../data/data";
+import {reviews} from "../../data/data";
 
 const Testimony = () => {
     const [name, setName] = React.useState(reviews[0].name);
@@ -30,16 +30,17 @@ const Testimony = () => {
 
 
     return (
-        <section className='py-12 px-4 flex flex-col gap-8 max-w-[1400px] items-center justify-center mx-auto'>
-            <h1 className='text-5xl sm:text-6xl mb-12 text-center p-4 bg-white rounded-lg text-blue border-2 border-blue'>What Our Clients are Saying</h1>
+        <section className='min-h-[600px] mt-12 py-12 px-4 flex flex-col gap-8 max-w-[1400px] items-center justify-start mx-auto'>
+            <h1 className='text-5xl sm:text-6xl mb-12 text-center'>What Our Clients are Saying</h1>
             {!loading?
-                <div className='review h-[400px]'>
-                    <span className='absolute top-[-20px] left-[20px] text-[108px] z-10 text-blue'>“</span>
-                    <article className="review-clip rounded-lg pb-24 pt-8 px-8 sm:pt-16 sm:px-16">
+                <div className='review'>
+                    <span className='absolute top-[-20px] left-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>“</span>
+                    <article className="rounded-lg pb-24 pt-16 px-8 sm:px-16">
                         <div className='mb-4'>{stars}</div>
                         <p className='text-xl mb-4'>{review}</p>
                         <address className='text-xl text-center'>{name}</address>
                     </article>
+                    <span className='absolute bottom-[-20px] right-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>”</span>
                 </div>
                 : <></> }
         </section>

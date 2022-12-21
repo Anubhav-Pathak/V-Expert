@@ -1,49 +1,61 @@
-import {useEffect, useState} from "react";
-const Form = ({price}) => {
+import React, {useState} from "react";
+
+const properties = {
+    "Apartment - Studio / 1 Br / 2 Br": 300,
+    "Apartment - 3 Br / 4 Br": 400,
+    "Apartment - 5 Br / Pent House": 500,
+    "Villa - 2 Br / 3 Br": 700,
+    "Villa - 4 Br / 5 Br": 800,
+    "Villa - 6 Br / 7 Br": 900,
+};
+
+const Form = () => {
     const [form, setForm] = useState({
-        size1: String,
-        size2: String,
-        size3: String,
-        price: Number
+        price: 100,
+        location: "",
+        property: "",
+        date: new Date(),
+        description: "",
     })
     const handleChange = (e) => {
+
         setForm(prevState => {
             return {
                 ...prevState,
-                [e.target.name]: e.target.value,
+                [e.target.name]: e.target.innerHTML,
+                price: properties[e.target.value]
             }
         })
     }
     const handleSubmit = (e) => e.preventDefault();
-    useEffect(() => {
-        setForm(prevState => {
-            return {
-                ...prevState,
-                price: price,
-            }
-        })
-    },[price]);
-
     return (
-        <div>
-            <p className={"service-price text-5xl"}>Est Price <span className={"text-2xl"}>{price}</span></p>
-            <form className={"service-form"} onSubmit={handleSubmit}>
-                <label htmlFor={"size1"} className={"service-label"}>
-                    <i className="fa-solid fa-house"></i>
-                    <input id={"size1"} name={"size1"} type={"text"} value={form.size1} placeholder={"Apartment Size"} onChange={handleChange}/>
-                </label>
-                <label htmlFor={"size2"} className={"service-label"}>
-                    <i className="fa-solid fa-house"></i>
-                    <input id={"size2"} name={"size2"} type={"text"} value={form.size2} placeholder={"Apartment Size"} onChange={handleChange}/>
-                </label>
-                <label htmlFor={"size3"} className={"service-label"}>
-                    <i className="fa-solid fa-house"></i>
-                    <input id={"size3"} name={"size2"} type={"text"} value={form.size3} placeholder={"Apartment Size"} onChange={handleChange}/>
-                </label>
-                <button type={"submit"} className={"form-submit-btn text-2xl"}>Make Purchase </button>
-            </form>
-        </div>
+        <form className="flex flex-col text-xl" onSubmit={handleSubmit}>
+            <p className={"service-price text-lg mb-8"}> Net Price: <span className={"text-7xl"}>{form.price}</span><strong>AED</strong></p>
+            {/* Property Type */}
+            <label className="mb-2 block font-bold" htmlFor="property"><i className="fa-solid fa-house"></i>&nbsp;Property Type</label>
+            <select className="mb-8 p-2 border-2 border-blue rounded-md" id="property" name="property" onChange={handleChange}>
+                <option selected="selected">Select Property Type</option>{
+                    Object.keys(properties).map((property)=> <option value={property}>{property}</option>)
+                }
+            </select>
+            {/* Time Slot */}
+            <p className="mb-2 block font-bold"><i class="fa-regular fa-clock"></i>&nbsp;Select Time Slot</p>
+            <div className="flex gap-4 flex-wrap">
+                <div>
+                    <label className="block" htmlFor="date">Choose Preferred Date: </label>
+                    <input className="w-[250px] p-2 border-2 border-blue rounded-md" id="date" type="date" name="date"></input>
+                </div>
+                <div>
+                    <label className="block" htmlFor="time">Choose Preferred Time: </label>
+                    <input className="w-[250px] mb-8 p-2 border-2 border-blue rounded-md" id="time" type="time" name="time"/>
+                </div>
+            </div>
+            {/* Description */}
+            <label className="mb-2 block font-bold" htmlFor="description"><i class="fa-solid fa-helmet-safety"></i>&nbsp;Requirements</label>
+            <textarea id="description" placeholder="Tell us about your requirements" className="border-2 border-blue rounded-md resize-none p-2" name="description" cols={50} rows={5}/>
+            {/* Submit Button */}
+            <input type="submit" value="Book" className="cursor-pointer mt-12 border-blue bg-blue text-white border-2 px-2 py-4 rounded-md hover:bg-opacity-90"/>
+        </form>
     )
 }
-
 export default Form

@@ -5,11 +5,11 @@ import Package from "./package";
 import About from "./about";
 import Service from "./service";
 import Whatsapp from "./whatsapp";
-import Testimony from "./testimony"
+import Testimony from "../../layouts/testimony"
 
 const Home = () => {
     return(
-        <main>
+        <main className="home">
             <Hero />
             <Stats />
             <Package />
