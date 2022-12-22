@@ -6,6 +6,7 @@ import About from "./about";
 import Form from "./form";
 import Details from "./details";
 import ServiceTab from "./tabs";
+import Whatsapp from "../../layouts/whatsapp"
 import V1 from '../../../assests/images/V1.svg';
 import V2 from '../../../assests/images/V2.svg';
 import V4 from '../../../assests/images/V4.svg';
@@ -45,6 +46,7 @@ const Service = () => {
                 <p className="mb-4">Should there be any changes to legislation applicable to the services provided, any necessary changes to the services and/or fees will be implemented as determined by Vexpert Technical Services Est. in order to comply with the new or revised legislation</p>
                 <p>For all services there is no warranty on the materials unless specified /mentioned in advance of the services being carried out.</p>
             </section>
+            <Whatsapp />
         </main>
     )
 }

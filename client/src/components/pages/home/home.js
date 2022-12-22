@@ -4,7 +4,7 @@ import Stats from "./stats";
 import Package from "./package";
 import About from "./about";
 import Service from "./service";
-import Whatsapp from "./whatsapp";
+import Whatsapp from "../../layouts/whatsapp";
 import Testimony from "../../layouts/testimony"
 
 const Home = () => {

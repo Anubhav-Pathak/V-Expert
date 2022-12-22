@@ -1,4 +1,4 @@
-import whatsapp from "../../../assests/images/w2.svg"
+import whatsapp from "../../assests/images/w2.svg"
 
 const Whatsapp = () => {
     return (
