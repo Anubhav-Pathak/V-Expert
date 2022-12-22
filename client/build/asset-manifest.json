@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.77b52aff.css",
-    "main.js": "/static/js/main.9f2e01db.js",
+    "main.css": "/static/css/main.55dcd652.css",
+    "main.js": "/static/js/main.729d8d10.js",
     "static/media/Electrical.jpg": "/static/media/Electrical.38ed345b171b96059113.jpg",
     "static/media/Plumbing.jpg": "/static/media/Plumbing.dae0cd23684bd3b3f55b.jpg",
     "static/media/AirConditioning.jpg": "/static/media/AirConditioning.7aa7b131d33fab798c29.jpg",
@@ -18,14 +18,14 @@
     "static/media/Wallpaper.jpg": "/static/media/Wallpaper.a1c07b6ba69063071d53.jpg",
     "static/media/V1.svg": "/static/media/V1.77d4418d99c8cb5dbfcdec93b72c0146.svg",
     "static/media/V4.svg": "/static/media/V4.39b24d93e9c23a657bc9a6a66022d8c8.svg",
-    "static/media/w2.svg": "/static/media/w2.f51e54389a5cc7b3617df4c9ce5fbd0a.svg",
+    "static/media/w2.svg": "/static/media/w2.ab283685a3cd444d41db3ba7c9cc2386.svg",
     "static/media/V2.svg": "/static/media/V2.4f444756e2f0a1228d7886d541318e7e.svg",
     "index.html": "/index.html",
-    "main.77b52aff.css.map": "/static/css/main.77b52aff.css.map",
-    "main.9f2e01db.js.map": "/static/js/main.9f2e01db.js.map"
+    "main.55dcd652.css.map": "/static/css/main.55dcd652.css.map",
+    "main.729d8d10.js.map": "/static/js/main.729d8d10.js.map"
   },
   "entrypoints": [
-    "static/css/main.77b52aff.css",
-    "static/js/main.9f2e01db.js"
+    "static/css/main.55dcd652.css",
+    "static/js/main.729d8d10.js"
   ]
 }

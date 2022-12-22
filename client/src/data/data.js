@@ -43,7 +43,13 @@ export const services = [
         img: plumbing,
         icon: "fa-hammer",
         name: "Plumbing",
-        description: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation"
+        description: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation",
+        details: {
+            para1: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation.",
+            para2: "V-Expert provides high-quality Testing and commissioning activities of Electromechanical systems to our clients.",
+            label: "Our technicians are highly qualified in Testing and commissioning range , notably",
+            description: ["Chilled water Piping System", "Air conditioning Equipment's", "Chilled water pumps", "Air Balancing", "Chilled Water Balancing", "Hot Water Balancing", "Cold Water network Pressure setting", "Transfer / Booster Pumps", "All special valves like Thermostatic Mixing valves , DRV , PICV , PRV etc.", "Electrical Water Heaters / Solar Water Heaters", "RO Water System", "Bus Bars", "Lighting Control System", "MDB , SMDB,MCC& DB", "Voice/Data/ Fiber Optics Systems", "Intercom Systems", "Inverters", "Security Systems", "Solar Panels"],
+        }
     },
     {
         path: "testing",
@@ -186,7 +192,7 @@ export const reviews = [
         name:"Saad Zaghloul"
     },
     {
-        rating:4.5,
+        rating:5,
         review:"The V-Expert Technical Services team did a great job on some painting and other repair works in my villa. The teams were on time they covered all our furniture before painting and sorted everything in time..",
         name: "Faizal"
     },
@@ -196,7 +202,7 @@ export const reviews = [
         name: "Mohamed"
     },	
     {
-        rating:4.5,
+        rating:4,
         review:"My experience with V-Expert Technical Services home maintenance was excellent both in terms of service and quality of works. The team who did the job for our home were neat and professional. Thanks for the stress-free experience. best maintenance company. Recommended.",
         name: "Charles"
     },
@@ -211,12 +217,12 @@ export const reviews = [
         name: "Abhishek"
     },
     {
-        rating:4.5,
+        rating:5,
         review:"This is the 2nd time I've contacted the V-Expert Technical Services team for an office repair, and again they never fail to exceed my expectation.",
         name: "Abhishek"
     },
     {
-        rating:4.5,
+        rating:4,
         review:"I am so glad I found this company. Good maintenance companies are hard to find these days. We have our annual AMC contract with them, and they have been responsive to our requests.",
         name: "Santhosh"
     },
