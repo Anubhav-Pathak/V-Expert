@@ -18,9 +18,9 @@ const Service = () => {
     const Service = services.find(s => s.path === name);
 
     return (
-        <main className="bg-gray">
+        <main className="bg-gray pb-12">
             <About service={Service}/>
-            <section className="bg-white flex items-center justify-evenly flex-wrap-reverse gap-8 shadow-lg shadow-black mx-4 p-4 md:mx-auto max-w-[1400px]">
+            <section className="bg-white flex items-center justify-evenly flex-wrap-reverse gap-8 shadow-lg shadow-black mx-4 p-4 xl:mx-auto max-w-[1400px]">
                 <article>
                     <img src={Service.img} alt={Service.name} width="600px" className="service-img p-4 border-8 border-blue"/>
                     <ul className='flex flex-col gap-6 mt-8 text-xl'>
@@ -33,7 +33,7 @@ const Service = () => {
             </section>
             <Details service={Service}/>
             <Testimony />
-            <section className='text-lg p-4 text-blue mt-12 bg-white border-2 border-blue rounded-md mx-4 md:mx-auto max-w-[1400px]'>
+            <section className='text-md p-4 text-blue mt-12 bg-white border-2 border-blue rounded-md mx-4 xl:mx-auto max-w-[1400px]'>
                 <h2 className='text-3xl mb-8'>Terms and Condtions of Purchase</h2>
                 <ServiceTab />
                 <hr className="my-8"/>

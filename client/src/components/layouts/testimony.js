@@ -35,12 +35,12 @@ const Testimony = () => {
             {!loading?
                 <div className='review'>
                     <span className='absolute top-[-20px] left-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>“</span>
-                    <article className="rounded-lg pb-24 pt-16 px-8 sm:px-16">
+                    <article className="rounded-lg py-16 sm:px-16">
                         <div className='mb-4'>{stars}</div>
                         <p className='text-xl mb-4'>{review}</p>
                         <address className='text-xl text-center'>{name}</address>
                     </article>
-                    <span className='absolute bottom-[-20px] right-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>”</span>
+                    <span className='absolute bottom-[-40px] right-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>”</span>
                 </div>
                 : <></> }
         </section>
