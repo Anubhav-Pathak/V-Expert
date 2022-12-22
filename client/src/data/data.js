@@ -1,6 +1,6 @@
 import airConditioning from "../assests/images/services/AirConditioning.jpg"
-import electrical from "../assests/images/services/Electrical.jpg"
-import plumbing from "../assests/images/services/Plumbing.jpg"
+import electrical from "../assests/images/services/electrical.jpg"
+import plumbing from "../assests/images/services/plumbing.jpg"
 import testing from "../assests/images/services/Testing.jpg"
 import tiling from "../assests/images/services/FloorWallTiling.jpg"
 import painting from "../assests/images/services/Painting.jpg"
@@ -43,21 +43,33 @@ export const services = [
         img: plumbing,
         icon: "fa-hammer",
         name: "Plumbing",
-        description: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation"
+        description: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation",
+        details: {
+            para1: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation.",
+            para2: "V-Expert provides high-quality Plumbing system installation services to private and corporate clients",
+            label: "Our technicians are highly qualified to install/replace the range of Plumbing systems, notably:",
+            features: ["Design/Build Installations", "Transfer Pumps / Control Panels", "Booster Pumps / Control Panels", "Sump Pumps", "HDPE Pipe works with Electrofusion / Butt Weld Joints", "PPR Pipe Work", "Pex Pipe Work", "U-PVC Pipe Works", "Sanitaryware's", "Bathroom Accessories / Final Fix Works", "Electrical Water Heaters / Solar Water Heaters", "RO Water System", "Rain water Outlets"],
+        }
     },
     {
         path: "testing",
         img: testing,
         icon: "fa-screwdriver",
         name: "Testing",
-        description: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation"
+        description: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation",
+        details: {
+            para1: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation.",
+            para2: "V-Expert provides high-quality Testing and commissioning activities of Electromechanical systems to our clients.",
+            label: "Our technicians are highly qualified in Testing and commissioning range , notably",
+            description: ["Chilled water Piping System", "Air conditioning Equipment's", "Chilled water pumps", "Air Balancing", "Chilled Water Balancing", "Hot Water Balancing", "Cold Water network Pressure setting", "Transfer / Booster Pumps", "All special valves like Thermostatic Mixing valves , DRV , PICV , PRV etc.", "Electrical Water Heaters / Solar Water Heaters", "RO Water System", "Bus Bars", "Lighting Control System", "MDB , SMDB,MCC& DB", "Voice/Data/ Fiber Optics Systems", "Intercom Systems", "Inverters", "Security Systems", "Solar Panels"],
+        }
     },
     {
         path: "tiling",
         img: tiling,
         icon: "fa-hammer",
         name: "Tiling",
-        description: "Exceptional products and entire lines of foreign and domestic manufacturers of supreme and most unique tile products and accessories. Our technical services also involve floor and wall tile work."
+        description: "Exceptional products and entire lines of foreign and domestic manufacturers of supreme and most unique tile products and accessories. Our technical services also involve floor and wall tile work.",
     },
     {
         path: "painting",
