@@ -2,15 +2,15 @@
 // dotenv.config()
 
 import express from "express";
-// import path from "path";
+import path from "path";
 // import mongoose from "mongoose";
-// import {fileURLToPath} from 'url';
+import {fileURLToPath} from 'url';
 
 // import Package from "./models/package.mjs";
 
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 8000;
 const app = express();
