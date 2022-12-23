@@ -1,8 +1,3 @@
-main.home{
-    background-image: url("../images/Background.jpg");
-    background-attachment: fixed;
-}
-
 /* ---------------------------------------------------------- */
 /* ---------------------- Hero --------------------- */
 /* ---------------------------------------------------------- */
@@ -236,14 +231,7 @@ main.home{
 .service-carousel-mid, .service-carousel-mob {
     display: none;
 }
-.service .swiper-pagination-horizontal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 0;
-    background-color: white;
-    border-radius: 8px;
-}
+
 /* ---------------------------------------------------------- */
 /* ---------------------- Testimony --------------------- */
 /* ---------------------------------------------------------- */

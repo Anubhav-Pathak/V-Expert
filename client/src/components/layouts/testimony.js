@@ -9,31 +9,31 @@ const Testimony = () => {
     let stars = [];
     let currentReview = 0;
 
-    while(rating--){
-        stars.push(<i className="fa-solid fa-star text-blue fa-xl mr-2" />)
-    }
-
     const changeContent = () => {
         setLoading(true);
-        currentReview++;
-        currentReview = currentReview%reviews.length;
         setName(reviews[currentReview].name);
         setReview(reviews[currentReview].review);
         setRating(reviews[currentReview].rating);
+        while(rating>0){
+            stars.push(<i className="fa-solid fa-star text-blue fa-xl mr-2" />)
+            rating--;
+        }
+        currentReview++;
+        currentReview = currentReview % reviews.length;
         setLoading(false)
     }
 
     React.useEffect( () => {
-        const timer = setInterval(changeContent, 5000)
+        const timer = setInterval(changeContent, 2000)
         return () => clearInterval(timer);
     })
 
 
     return (
-        <section className='min-h-[600px] mt-12 py-12 px-4 flex flex-col gap-8 max-w-[1400px] items-center justify-start mx-auto'>
-            <h1 className='text-5xl sm:text-6xl mb-12 text-center'>What Our Clients are Saying</h1>
+        <section className='mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray'>
+            <h1 className='text-5xl sm:text-6xl text-center text-blue'>Testimonies</h1>
             {!loading?
-                <div className='review'>
+                <div className='review max-w-3xl border-2'>
                     <span className='absolute top-[-20px] left-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>“</span>
                     <article className="rounded-lg py-16 sm:px-16">
                         <div className='mb-4'>{stars}</div>
