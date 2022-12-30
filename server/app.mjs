@@ -12,18 +12,18 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "../client/build")));
 
-app.get("*", function(_, res) {
-    res.sendFile(
-        path.join(__dirname, "../client/build", "index.html"),
-        function (err) {
-            if(err) {
-                res.status(500).send(err)
-            }
-        }
-    )
-})
+// app.get("*", function(_, res) {
+//     res.sendFile(
+//         path.join(__dirname, "../client/build", "index.html"),
+//         function (err) {
+//             if(err) {
+//                 res.status(500).send(err)
+//             }
+//         }
+//     )
+// })
 
-app.use('/v1/bookings', BookingRouter);
+app.use('/bookings', BookingRouter);
 
 export {
     app

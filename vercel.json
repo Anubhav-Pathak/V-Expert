@@ -1,19 +1,38 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "./server/app.mjs",  
-        "use": "@vercel/node"
-      },
-      {
-        "src": "./client/build",    
-        "use": "@vercel/static"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/server/app.mjs"
-      }
-    ]
-  }
+  "builds": [
+    { "src": "server/index.mjs", "use": "@vercel/node" },
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "api/src/app.js"
+    },
+    {
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000, immutable" },
+      "dest": "client/static/$1"
+    },
+    { "src": "/favicon.ico", "dest": "client/favicon.ico" },
+    {
+      "src": "/asset-manifest.json",
+      "dest": "client/asset-manifest.json"
+    },
+    {
+      "src": "/precache-manifest.(.*)",
+      "dest": "client/precache-manifest.$1"
+    },
+    { "src": "/manifest.json", "dest": "client/manifest.json" },
+    {
+      "src": "/service-worker.js",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "client/service-worker.js"
+    },
+    { "src": "/(.*)", "dest": "client/index.html" }
+  ]
+}
