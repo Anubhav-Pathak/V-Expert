@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .form-input {
+    @apply px-4 py-2 rounded-lg text-xl outline-none border border-blue-700
+} */
