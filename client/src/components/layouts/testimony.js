@@ -35,10 +35,10 @@ const Testimony = () => {
 
 
     return (
-        <section className='mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray'>
+        <section className='min-h-[500px] mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray'>
             <h1 className='text-5xl sm:text-6xl text-center text-blue'>Testimonies</h1>
             {!loading?
-                <div className='review max-w-3xl border-2'>
+                <div className='review max-w-3xl'>
                     <span className='absolute top-[-20px] left-[20px] text-[108px] md:text-[12vw] z-10 text-blue'>“</span>
                     <article className="rounded-lg py-16 sm:px-16">
                         <div className='mb-4'>{stars}</div>

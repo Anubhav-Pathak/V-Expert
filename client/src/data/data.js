@@ -172,18 +172,61 @@ export const services = [
 
 export const packages = [
     {
-        name: "First",
         path: "first",
+        name: "First",
+        price: 3099,
+        pm: 3,
+        rsc: 12,
+        hs: 3,
+        properties: {
+            "Apartment - Studio / 1 Br / 2 Br": 3099,
+            "Apartment - 3 Br / 4 Br": 4199,
+            "Apartment - 5 Br / Pent House": 5399,
+            "Villa - 2 Br / 3 Br": 6299,
+            "Villa - 4 Br / 5 Br": 7499,
+            "Villa - 6 Br / 7 Br": 8899,
+        },
     },
     {
-        name: "Buisness",
         path: "buisness",
+        name: "Buisness",
+        price: 2099,
+        pm: 2,
+        rsc: 8,
+        hs: 2,
+        properties: {
+            "Apartment - Studio / 1 Br / 2 Br": 2099,
+            "Apartment - 3 Br / 4 Br": 2699,
+            "Apartment - 5 Br / Pent House": 3299,
+            "Villa - 2 Br / 3 Br": 4699,
+            "Villa - 4 Br / 5 Br": 5899,
+            "Villa - 6 Br / 7 Br": 7399,
+        },
     },
     {
-        name: "Economy",
         path: "economy",
+        name: "Economy",
+        price: 1099,
+        pm: 1,
+        rsc: 6,
+        properties: {
+            "Apartment - Studio / 1 Br / 2 Br": 1099,
+            "Apartment - 3 Br / 4 Br": 1599,
+            "Apartment - 5 Br / Pent House": 2999,
+            "Villa - 2 Br / 3 Br": 3299,
+            "Villa - 4 Br / 5 Br": 3999,
+            "Villa - 6 Br / 7 Br": 4999,
+        },
     }
 ];
+
+export const packageDetails = {
+    pm:{
+        description: "Upon signing the contract, our team of experts will visit, inspect and perform the necessary maintenance work. Please find below the checklists.",
+        details: ["Air conditioning- Filter Cleaning,  AirOutlet Cleaning & Functional Checks. Gas Top up for Split AC if applicable", "Electrical functional checks for components and panels, including light fittings and switch sockets.","Santeryware Maintenance (such as floor drain, sink, kitchen sink, toilet, bidet and bath)", "Washing machine and dishwasher associated with water supply and drainage connection problem only." ]
+    },
+    hs: "Handyman Services limited to Fixing of mirror, book shelves, minor carpentry, door hinges and cabinet hinges fixing, wall hanging and picture frame fixing on walls"
+}
 
 export const reviews = [
     {

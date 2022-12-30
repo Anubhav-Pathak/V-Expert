@@ -5,7 +5,7 @@ import "../../../assests/css/services.css"
 import About from "./about";
 import Form from "./form";
 import Details from "./details";
-import ServiceTab from "./tabs";
+import ServiceTab from "../../layouts/tabs";
 import Whatsapp from "../../layouts/whatsapp"
 import V1 from '../../../assests/images/V1.svg';
 import V2 from '../../../assests/images/V2.svg';

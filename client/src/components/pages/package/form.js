@@ -1,55 +1,36 @@
-import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, {useState} from "react";
 
-import { baseUrl } from "../../../constants";
-
-let packages = [
-    "first",
-    "economy",
-    "business",
-]
-
-const Form = () => {
-    let {name} = useParams();
-    let navigate = useNavigate();
-    let success = packages.find((item) => item === name);
-    useEffect(() => {    
-    if (!success || success === undefined) {
-        navigate("/error", {replace: true});
+const Form = ({packageType}) => {
+    const [form, setForm] = useState({
+        price: packageType.price,
+        property: "",
+    })
+    const handleChange = (e) => {
+        setForm(()=>{ return (
+            {
+                price: packageType.properties[e.target.value],
+                property: e.target.value
+            }
+        );
+        });
     }
-    });    
-    const  handleSubmit = async (e) => {
-        e.preventDefault();
-        console.log("submit");
-        const data = new FormData(e.target);
-        const value = Object.fromEntries(data.entries());
-        console.log("value", value);
-
-        let url = baseUrl + "/api/package";
-        const res = await fetch( url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(value),
-        })
-        const json = await res.json();
-        console.log("json", json);
-    }
-
+    const handleSubmit = (e) => e.preventDefault();
     return (
-        <div>
-        <h1>{name}</h1>
-        <form onSubmit={handleSubmit}>
-        <input type="text" name="location" placeholder="Location" required/><br />
-        <input type="text" name="propertyType" placeholder="Property Type" required/><br />
-        <input type="text" name="addOns" placeholder="Add ons" required/><br />
-        <button type="submit">
-            Proceed to Checkout
-        </button>
+        <form className="flex flex-col text-xl" onSubmit={handleSubmit} action="/cart" method="POST">
+            <p className={"text-lg mb-8"}> Base Price: <span className={"text-7xl"}>{form.price}</span><strong>AED</strong></p>
+            {/* Property Type */}
+            <label className="mb-2 block font-bold" htmlFor="property"><i className="fa-solid fa-house"></i>&nbsp;Property Type</label>
+            <select className="p-2 border-2 border-blue rounded-md" id="property" name="property" onChange={handleChange}>
+                <option selected="selected">Select Property Type</option>{
+                    Object.keys(packageType.properties).map((property)=> <option value={property}>{property}</option>)
+                }
+            </select>
+            {/* Submit Button */}
+            <div className="flex flex-wrap gap-x-4">
+                <input type="submit" value="Add to Cart" className="cursor-pointer mt-4 border-blue bg-blue text-white border-2 px-2 py-4 rounded-md hover:bg-opacity-90"/>
+                <a href="/cart"  className=" text-center cursor-pointer mt-4 border-blue text-blue border-2 px-2 py-4 rounded-md hover:bg-blue hover:text-white">Go to Cart</a>
+            </div>
         </form>
-        </div>
     )
 }
-
 export default Form

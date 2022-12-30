@@ -655,16 +655,17 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .mb-4 {
@@ -723,12 +724,12 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -775,10 +776,6 @@ video {
   height: 40px;
 }
 
-.min-h-\[600px\] {
-  min-height: 600px;
-}
-
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -789,6 +786,14 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
 }
 
 .w-\[100\%\] {
@@ -823,8 +828,8 @@ video {
   min-width: 130px;
 }
 
-.max-w-\[1400px\] {
-  max-width: 1400px;
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-\[400px\] {
@@ -833,6 +838,10 @@ video {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-\[1400px\] {
+  max-width: 1400px;
 }
 
 .max-w-\[500px\] {
@@ -845,14 +854,6 @@ video {
 
 .max-w-\[800p\] {
   max-width: 800p;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
 }
 
 .cursor-pointer {
@@ -997,6 +998,11 @@ video {
   border-top-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 228 / var(--tw-bg-opacity));
+}
+
 .bg-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(3 31 96 / var(--tw-bg-opacity));
@@ -1010,11 +1016,6 @@ video {
 .bg-gold {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 228 228 / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -1264,6 +1265,11 @@ a {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 31 96 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
 }
@@ -1276,6 +1282,11 @@ a {
 .hover\:text-gold:hover {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1419,6 +1430,10 @@ a {
 
   .lg\:h-\[400px\] {
     height: 400px;
+  }
+
+  .lg\:h-\[350px\] {
+    height: 350px;
   }
 
   .lg\:min-h-fit {

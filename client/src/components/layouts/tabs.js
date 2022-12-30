@@ -5,6 +5,7 @@ const ServiceTab = () => (
   <Tabs>
     <TabList>
       <Tab>Customer Obligations</Tab>
+      <Tab>Home Maintenance Packages</Tab>
       <Tab>Call Outs</Tab>
       <Tab>Payment</Tab>
       <Tab>Cancellation</Tab>
@@ -17,6 +18,20 @@ const ServiceTab = () => (
             <li className='ml-8'>Client / tenent Responsible for obtaining all required approvals and NOCs from local authority, building management, community management, etc. prior to commencement of services.</li>
             <li className='ml-8'>Remove all obstructions around the area to be serviced to allow safe access.</li>
             <li className='ml-8'>Bear any cost for any destructive access (such as cutting through ceiling plaster or panels) is required for delivery of the services.</li>
+        </ul>
+    </TabPanel>
+    <TabPanel>
+        <ul className='mt-4 list-disc'>
+            <li className='ml-8'>The scope of services provided is defined as per the package description purchased as well as any additional options or variables selected during the order process.</li>
+            <li className='ml-8'>Maintenance Services will be scheduled over a recurring 12-month period.</li>
+            <li className='ml-8'>Preventive Maintenance - shall be performed after contract full payment completion.</li>
+            <li className='ml-8'>Material not included in this package. Any material will be supplied on request, subject to additional charges. </li>
+            <li className='ml-8'>Installation of any items / materials provided by the customer is their sole reponsible for its functionality , V-expert is not liable for failure or its related malfunctioning.</li>
+            <li className='ml-8'>Any  service not expressly mentioned in our scope</li>
+            <li className='ml-8'>Modification and or insulation work for piping, ducting and internal duct cleaning not included in this package , which may carried out as per customer request with additional cost.</li>
+            <li className='ml-8'>Replacement of water or drainage lines in shafts, air wells, water pumps, pressure vessels, bladders, water tanks etc. not included in our package. which may carried out as per customer request with additional cost.</li>
+            <li className='ml-8'>Roof or basement leakage due to water proofing failure of the structure not included in this package</li>
+            <li className='ml-8'>Kitchen equipment/Audio visual equipment/Data and related components/Generators/Chilled water pumps or piping insulation/Garden Sprinkler/Irrigation systems and associated pumps and equipment/Swimming Pools not included in our package. which may carried out as per customer request with additional cost.</li>
         </ul>
     </TabPanel>
     <TabPanel>
