@@ -1,19 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "./server/app.mjs",  
-        "use": "@vercel/node"
-      },
-      {
-        "src": "./client/build",    
-        "use": "@vercel/static"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/server/app.mjs"
-      }
-    ]
-  }
+  "env": {
+    "CI": "false"
+  },
+  "builds": [
+    { "src": "server/index.mjs", "use": "@vercel/node" },
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "server/app.mjs"
+    },
+    {
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000, immutable" },
+      "dest": "client/static/$1"
+    },
+    { "src": "/favicon.ico", "dest": "client/favicon.ico" },    
+    { "src": "/(.*)", "dest": "client/index.html" }
+  ]
+}

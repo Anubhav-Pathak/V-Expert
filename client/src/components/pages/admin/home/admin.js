@@ -1,4 +1,5 @@
 import Requests from "./requests";
+import "../../../../assests/css/admin.css"
 
 export default () => {
     return (
