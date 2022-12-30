@@ -732,6 +732,10 @@ video {
   margin-left: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -933,6 +937,14 @@ video {
           column-gap: 1rem;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1028,6 +1040,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .py-12 {

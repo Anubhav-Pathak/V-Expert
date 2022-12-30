@@ -3,9 +3,8 @@ import {useParams} from "react-router-dom";
 import {services} from "../../../data/data";
 import "../../../assests/css/services.css"
 import About from "./about";
-import Form from "./form";
 import Details from "./details";
-import ServiceTab from "../../layouts/tabs";
+import Tabs from "../../layouts/tabs";
 import Whatsapp from "../../layouts/whatsapp"
 import V1 from '../../../assests/images/V1.svg';
 import V2 from '../../../assests/images/V2.svg';
@@ -29,13 +28,12 @@ const Service = () => {
                         <li className='flex items-center'><img src={V4} alt="24-hours" width={"30px"} className="mr-2"/>100% Customer Satisfaction</li>
                     </ul>
                 </article>
-                <Form />
+                <Details service={Service}/>
             </section>
-            <Details service={Service}/>
             <Testimony />
             <section className='text-md p-4 text-blue mt-12 bg-white border-2 border-blue rounded-md mx-4 xl:mx-auto max-w-[1400px]'>
                 <h2 className='text-3xl mb-8'>Terms and Condtions of Purchase</h2>
-                <ServiceTab />
+                <Tabs />
                 <hr className="my-8"/>
                 <h3 className="font-bold text-2xl mb-8">General Terms & Conditions</h3>
                 <p className="mb-4">Vexpert Technical Services Est. reserves the right to refuse an order if it is deemed to require services beyond the reasonable scope indicated.</p>
