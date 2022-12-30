@@ -3,7 +3,7 @@ import {app} from "./app.mjs";
 import mongoose from "mongoose";
 import * as dotEnv from "dotenv";
 
-dotEnv.config({path: './config.env'});
+dotEnv.config({path: './.env'});
 
 mongoose.connect(`${process.env.MONGO_URL}`)
     .then(() => logger.info(`DB connected Successfully`))
