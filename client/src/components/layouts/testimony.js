@@ -7,19 +7,24 @@ const Testimony = () => {
     const [loading, setLoading] = React.useState(false);
     let [rating, setRating] = React.useState(reviews[0].rating);
     let stars = [];
-    let currentReview = 0;
+    let [currentReview, setCurrentReview] = React.useState(0);
 
-    const changeContent = () => {
+    const changeContent = async () => {
         setLoading(true);
-        setName(reviews[currentReview].name);
-        setReview(reviews[currentReview].review);
-        setRating(reviews[currentReview].rating);
+
+        await setCurrentReview(prevState => {
+            prevState = (prevState + 1) % reviews.length;
+            setName(reviews[prevState].name);
+            setReview(reviews[prevState].review);
+            setRating(reviews[prevState].rating);
+            return Number(prevState);
+        })
+
         while(rating>0){
             stars.push(<i className="fa-solid fa-star text-blue fa-xl mr-2" />)
             rating--;
         }
-        currentReview++;
-        currentReview = currentReview % reviews.length;
+        console.log(currentReview);
         setLoading(false)
     }
 
