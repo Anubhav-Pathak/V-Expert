@@ -1,6 +1,5 @@
 import Booking from "../models/booking.mjs";
 import logger from "../utils/logger.mjs";
-import booking from "../models/booking.mjs";
 
 const findAll = async () => {
     try {
