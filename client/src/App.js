@@ -8,6 +8,7 @@ import Footer from "./components/layouts/footer/footer";
 import Service from "./components/pages/services/service";
 import Admin from "./components/pages/admin/home/admin";
 import Login from "./components/pages/admin/authenticate/login";
+import Register from "./components/pages/admin/authenticate/register";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path={"/services/:name"} element={<Service />} />
                 <Route path={"/admin/panel"} element={<Admin />} />
                 <Route path={"/admin/login"} element={<Login />} />
+                <Route path={"/admin/register"} element={<Register />} />
                 <Route path={"/error"} element={<Error />} />
                 <Route path={"*"} element={<Error />} />
             </Routes>
