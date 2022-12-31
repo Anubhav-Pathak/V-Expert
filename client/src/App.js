@@ -9,6 +9,7 @@ import Service from "./components/pages/services/service";
 import Admin from "./components/pages/admin/home/admin";
 import Login from "./components/pages/admin/authenticate/login";
 import Register from "./components/pages/admin/authenticate/register";
+import Cart from "./components/pages/cart/cart";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path={"/admin/panel"} element={<Admin />} />
                 <Route path={"/admin/login"} element={<Login />} />
                 <Route path={"/admin/register"} element={<Register />} />
+                <Route path={"/cart"} element={<Cart />} />
                 <Route path={"/error"} element={<Error />} />
                 <Route path={"*"} element={<Error />} />
             </Routes>

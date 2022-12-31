@@ -24,7 +24,6 @@ const Testimony = () => {
             stars.push(<i className="fa-solid fa-star text-blue fa-xl mr-2" />)
             rating--;
         }
-        console.log(currentReview);
         setLoading(false)
     }
 
@@ -35,7 +34,7 @@ const Testimony = () => {
 
 
     return (
-        <section className='min-h-[500px] mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray'>
+        <section className='min-h-[650px] mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray'>
             <h1 className='text-5xl sm:text-6xl text-center text-blue'>Testimonies</h1>
             {!loading?
                 <div className='review max-w-3xl'>
