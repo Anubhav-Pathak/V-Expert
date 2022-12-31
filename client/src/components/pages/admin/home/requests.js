@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 import RequestCard from "./requestCard";
+import {baseUrl} from "../../../../constants";
+import axios from "axios";
 
 export default () => {
 
@@ -7,11 +9,21 @@ export default () => {
     const [status, setStatus] = useState("pending")
     const [loading, setLoading] = useState(false);
 
+    const fetchBookings = async () => {
+        return await axios.get(`${baseUrl}/bookings?status=${status}`);
+    }
+
     useEffect(()=>{
         setLoading(true);
-    //     Get DB Bookings On Base Of Status
-    //     Set DB Bookings
-        setLoading(false)
+
+        fetchBookings().then(res => {
+            console.log(res);
+            //     Set DB Bookings
+
+            setLoading(false)
+
+        }, err => console.log(err))
+
     }, [status])
 
     return (
