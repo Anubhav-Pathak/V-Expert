@@ -6,7 +6,7 @@ export default () => {
 
     const handleLogout = () => {
         localStorage.removeItem('user');
-        navigate('/admin/login')
+        navigate('/admin/login');
     }
 
     return (
