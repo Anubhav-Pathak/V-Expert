@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {getAllBookings, getSingleBooking, createBooking, deleteBooking} from "../controllers/bookingController.mjs";
+import {getAllBookings, getSingleBooking, createBooking, deleteBooking, updateBooking} from "../controllers/bookingController.mjs";
 
 import { authenticateToken } from "../middleware/loginRequired.mjs";
 
@@ -7,12 +7,13 @@ const router = Router();
 
 router.route('/')
 
-    .get(getAllBookings)
-    .post(authenticateToken, createBooking);
+    .get(authenticateToken, getAllBookings)
+    .post(createBooking);
 
-router.route(authenticateToken, '/:id')
-    .get(getSingleBooking)
-    .delete(deleteBooking);
+router.route('/:id')
+    .get(authenticateToken, getSingleBooking)
+    .patch(authenticateToken, updateBooking)
+    .delete(authenticateToken, deleteBooking);
 
 export {
     router as BookingRouter,

@@ -1,9 +1,9 @@
 import Booking from "../models/booking.mjs";
 import logger from "../utils/logger.mjs";
 
-const findAll = async () => {
+const findAll = async (filter) => {
     try {
-        const res = await Booking.find();
+        const res = await Booking.find(filter);
         if(res)
             return res;
         else {
@@ -63,9 +63,27 @@ const deleteRecord = async (id) => {
     }
 }
 
+const update = async (id, body) => {
+    try {
+        const res = await Booking.findOneAndUpdate(id, body);
+        if(res) {
+            logger.info('Record deleted');
+            return true;
+        }
+        else {
+            logger.error('Booking With Same ID already exist');
+            return false;
+        }
+    } catch (e) {
+        logger.error(e);
+        return null;
+    }
+}
+
 export {
     findAll,
     findById,
     insert,
-    deleteRecord
+    deleteRecord,
+    update
 }
