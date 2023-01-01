@@ -30,6 +30,8 @@ export default () => {
         signUp(formData)
             .then(res => {
                 console.log(res);
+                if(res.data.user.email)
+                    navigate("/admin/panel");
             })
             .catch(e => console.log(e));
     }
