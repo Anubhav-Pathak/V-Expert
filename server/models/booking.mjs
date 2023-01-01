@@ -20,15 +20,15 @@ const packageSchema = new Schema({
     },
     date: {
         type: Date,
-        required: [true, 'Date Of work is required'],
+        required: [true, 'Date is required'],
     },
-    startHr: {
-        type: Number,
-        required: [true, 'Start time is required'],
+    serviceDate: {
+        type: Date,
+        required: [true, 'Service Date is required']
     },
-    endHr: {
-        type: Number,
-        required: [true, 'End time is required'],
+    status: {
+        type: String,
+        required: [true, 'Booking status is required']
     }
 });
 
