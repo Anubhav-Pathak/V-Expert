@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5238ce64.css",
-    "main.js": "/static/js/main.04797b60.js",
+    "main.css": "/static/css/main.968d01aa.css",
+    "main.js": "/static/js/main.31cc41a9.js",
     "static/media/Electrical.jpg": "/static/media/Electrical.38ed345b171b96059113.jpg",
     "static/media/Plumbing.jpg": "/static/media/Plumbing.dae0cd23684bd3b3f55b.jpg",
     "static/media/AirConditioning.jpg": "/static/media/AirConditioning.7aa7b131d33fab798c29.jpg",
@@ -21,11 +21,11 @@
     "static/media/w2.svg": "/static/media/w2.ab283685a3cd444d41db3ba7c9cc2386.svg",
     "static/media/V2.svg": "/static/media/V2.4f444756e2f0a1228d7886d541318e7e.svg",
     "index.html": "/index.html",
-    "main.5238ce64.css.map": "/static/css/main.5238ce64.css.map",
-    "main.04797b60.js.map": "/static/js/main.04797b60.js.map"
+    "main.968d01aa.css.map": "/static/css/main.968d01aa.css.map",
+    "main.31cc41a9.js.map": "/static/js/main.31cc41a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5238ce64.css",
-    "static/js/main.04797b60.js"
+    "static/css/main.968d01aa.css",
+    "static/js/main.31cc41a9.js"
   ]
 }

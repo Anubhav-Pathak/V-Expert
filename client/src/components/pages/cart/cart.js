@@ -1,10 +1,11 @@
 import React from 'react'
-import {services, packages} from "../../../data/data"
 import Buy from './buy'
+import More from './more'
 const Cart = () => {
   return (
-    <main>
+    <main className='bg-gray pb-12'>
       <Buy />
+      <More />
     </main>
   )
 }
