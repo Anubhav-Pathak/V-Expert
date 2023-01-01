@@ -5,4 +5,9 @@
     -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.53);
     -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.53);
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.53);
+    color: red;
+}
+
+#search-modal {
+    background-color: rgba(28, 25, 23, 0.6);
 }
