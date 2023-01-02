@@ -1,10 +1,10 @@
 import {bookingComplete} from "../api";
 
-export default ({id, name, address, date, time, serviceList, packageList, email, phoneNumber, requirements, setReload}) => {
+export default ({_id, name, address, date, time, serviceList, packageList, email, phoneNumber, requirements, setReload}) => {
 
     const handleBooking = () => {
 
-        bookingComplete(id)
+        bookingComplete(_id)
             .then(res => {
                 console.log("Booking Complete");
                 setReload(prevState => prevState*-1);

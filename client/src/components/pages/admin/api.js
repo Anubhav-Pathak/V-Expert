@@ -26,7 +26,7 @@ const signUp = async (formData) => {
 
 const bookingComplete = async (id) => {
     setAuth();
-    return await axios.patch(`${baseUrl}/bookings/${id},`, {status: 'complete'}, config);
+    return await axios.patch(`${baseUrl}/bookings/${id}`, {status: 'complete'}, config);
 }
 
 export {
