@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../../../assests/images/img.png";
 import Dropdown from './dropdown';
 import {services, packages} from '../../../data/data.js'
+import SearchResults, {toggleModal} from "./searchResults";
 // import Search from './search';
 const Navbar = () => {
     const [header, setHeader] = React.useState(true);
@@ -48,7 +49,8 @@ const Navbar = () => {
                     <a href="#Contact" className="py-2 px-4 mr-4">Contact</a>
                 </div>
                 <div class="hidden lg:inline">
-                    <i className="fa-lg fa-solid fa-magnifying-glass cursor-pointer" onClick={()=>{window.alert("Searchbar under construction");}}></i>
+                    <i className="fa-lg fa-solid fa-magnifying-glass cursor-pointer" onClick={toggleModal}></i>
+                    <SearchResults />
                     {/* <Search show={search}/> */}
                     <a href="/cart" className="ml-4 mr-2"><i className="fa-lg fa-sharp fa-solid fa-cart-shopping"></i></a>
                     <a href="/login" className="mx-4 px-4 py-2 text-white bg-blue border-2 border-white rounded-md hover:bg-white hover:text-black">Register</a>
