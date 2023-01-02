@@ -34,7 +34,7 @@ const packageSchema = new Schema({
     },
     status: {
         type: String,
-        required: [false, 'Booking status is required']
+        default: "pending",
     }
 });
 

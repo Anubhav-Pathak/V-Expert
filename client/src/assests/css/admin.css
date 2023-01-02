@@ -1,7 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.form-input {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    border: 1px #031F60 solid;
+    outline: none;
+    background: transparent;
+}
 
-/* .form-input {
-    @apply px-4 py-2 rounded-lg text-xl outline-none border border-blue-700
-} */
+.form-input:focus {
+    outline: none;
+    background: transparent;
+    border: 1px #031F60 solid;
+}
