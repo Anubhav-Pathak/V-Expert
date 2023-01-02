@@ -1,18 +1,27 @@
 import React from 'react'
+
+import { baseUrl } from '../../constants'
 import logo from "../../assests/images/Footer-Logo.png"
 const Checkout = (props) => {
 
-  const [form, setForm] = React.useState({
-    name: "",
-    email: "",
-    phone: "",
-    address: "",
-    date: new Date(),
-    requirements: ""
-  });
-
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    console.log("baseUrl", baseUrl);
+    const response = await fetch(`${baseUrl}/bookings`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+    const res = await response.json();
+    if (response.status === 201) {
+      alert("Booking Successful");
+      window.location.href = "/";
+    }
   }
 
   return (

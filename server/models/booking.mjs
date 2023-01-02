@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const packageSchema = new Schema({
+    name: {
+        type: String,
+        required: [true, "Name is required"],
+    },
     address: {
         type: String,
         required: [true, 'Address is required'],
@@ -14,21 +18,23 @@ const packageSchema = new Schema({
     packageList: [String],
     requirements: {
         type: String,
+        required: [true, 'Requirements is required'],
     },
     email: {
         type: String,
+        required: [true, 'Email is required'],
     },
     date: {
         type: Date,
         required: [true, 'Date is required'],
     },
-    serviceDate: {
-        type: Date,
-        required: [true, 'Service Date is required']
+    time: {
+        type: String,
+        required: [true, 'Time is required'],
     },
     status: {
         type: String,
-        required: [true, 'Booking status is required']
+        required: [false, 'Booking status is required']
     }
 });
 

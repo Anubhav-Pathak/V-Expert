@@ -31,9 +31,21 @@ const findById = async (id) => {
     }
 }
 
+// Add service and package to booking
+// serviceList: [String],
+// packageList: [String],
+
 const insert = async (body) => {
     try {
-        const res = await Booking.create(body);
+        const res = await Booking.create({
+            address: body.address,
+            phoneNumber: body.phoneNumber,
+            email: body.email,
+            date: body.pdate,
+            time: body.ptime,
+            requirements: body.requirements,
+            name: body.name,
+        });
         if(res)
             return res;
         else {

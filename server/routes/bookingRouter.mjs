@@ -7,13 +7,13 @@ const router = Router();
 
 router.route('/')
 
-    .get(authenticateToken, getAllBookings)
+    .get(getAllBookings)
     .post(createBooking);
 
 router.route('/:id')
-    .get(authenticateToken, getSingleBooking)
-    .patch(authenticateToken, updateBooking)
-    .delete(authenticateToken, deleteBooking);
+    .get(getSingleBooking)
+    .patch(updateBooking)
+    .delete(deleteBooking);
 
 export {
     router as BookingRouter,
