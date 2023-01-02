@@ -301,7 +301,7 @@
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1400px) {
 
     .service {
         background-repeat: no-repeat;
@@ -315,7 +315,7 @@
     }
 
     .service-carousel-mid {
-        width: 90%;
+        width: 60%;
         margin: 0 auto;
         display: block;
     }
@@ -325,6 +325,14 @@
     }
     .hero-carousel .swiper-pagination{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .service-carousel-mid {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
     }
 }
 
