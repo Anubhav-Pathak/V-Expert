@@ -4,7 +4,7 @@ import More from './more'
 const Cart = () => {
   return (
     <main className='bg-gray pb-12'>
-      <Buy />
+      <Buy/>
       <More />
     </main>
   )

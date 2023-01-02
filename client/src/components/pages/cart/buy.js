@@ -37,7 +37,7 @@ const Buy = () => {
         <div className='max-w-[1400px] xl:mx-auto mx-4 py-8'>
             <div className='mb-4 flex flex-wrap justify-between gap-4'>
                 <h1 className='text-4xl'>Your Total: {price} <span className='text-lg'>AED</span></h1>
-                <button className='text-xl bg-blue text-white rounded-md px-4 py-2 hover:opacity-90'>Proceed to Checkout</button>
+                <a href='/checkout' className='text-xl bg-blue border-2 border-blue text-white rounded-md px-4 py-2 hover:border-gold hover:text-gold'>Book Appointment</a>
             </div>
             {localStorage.length > 0 ? 
                 s.map((service)=>{return(<ServiceCard service={service} onHandleClick={removeItems}/>)})

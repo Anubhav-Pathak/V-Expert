@@ -10,7 +10,7 @@ import Admin from "./components/pages/admin/home/admin";
 import Login from "./components/pages/admin/authenticate/login";
 import Register from "./components/pages/admin/authenticate/register";
 import Cart from "./components/pages/cart/cart";
-
+import Checkout from "./components/layouts/checkout"
 function App() {
     return (
         <>
@@ -22,6 +22,7 @@ function App() {
                 <Route path={"/admin/panel"} element={<Admin />} />
                 <Route path={"/admin/login"} element={<Login />} />
                 <Route path={"/admin/register"} element={<Register />} />
+                <Route path={"/checkout"} element={<Checkout />} />
                 <Route path={"/cart"} element={<Cart />} />
                 <Route path={"/error"} element={<Error />} />
                 <Route path={"*"} element={<Error />} />

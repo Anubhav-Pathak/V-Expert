@@ -28,7 +28,7 @@ const Form = ({packageType}) => {
             {/* Submit Button */}
             <div className="flex flex-wrap gap-x-4">
                 <input type="submit" value="Add to Cart" className="cursor-pointer mt-4 border-blue bg-blue text-white border-2 px-2 py-4 rounded-md hover:bg-opacity-90"/>
-                <a href="/cart"  className=" text-center cursor-pointer mt-4 border-blue text-blue border-2 px-2 py-4 rounded-md hover:bg-blue hover:text-white">Go to Cart</a>
+                <a href="/cart" className=" text-center cursor-pointer mt-4 border-blue text-blue border-2 px-2 py-4 rounded-md hover:bg-blue hover:text-white">Go to Cart</a>
             </div>
         </form>
     )
