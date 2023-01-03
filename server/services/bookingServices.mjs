@@ -77,9 +77,9 @@ const deleteRecord = async (id) => {
 
 const update = async (id, body) => {
     try {
-        const res = await Booking.findOneAndUpdate(id, body);
+        const res = await Booking.findOneAndUpdate({_id: id}, body);
         if(res) {
-            logger.info('Record deleted');
+            logger.info('Record updated');
             return true;
         }
         else {
