@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-
+import {useNavigate} from "react-router-dom"
 const Form = ({packageType}) => {
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         price: packageType.price,
         property: "",
@@ -14,7 +15,11 @@ const Form = ({packageType}) => {
         );
         });
     }
-    const handleSubmit = (e) => e.preventDefault();
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        localStorage.setItem(packageType.name, form.price);
+        navigate("/cart");
+    } 
     return (
         <form className="flex flex-col text-xl" onSubmit={handleSubmit} action="/cart" method="POST">
             <p className={"text-lg mb-8"}> Base Price: <span className={"text-7xl"}>{form.price}</span><strong>AED</strong></p>

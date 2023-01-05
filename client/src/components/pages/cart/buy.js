@@ -1,5 +1,5 @@
 import React from 'react'
-import { services } from '../../../data/data'
+import { services, packages } from '../../../data/data'
 
 const ServiceCard = (props) => {
     const clickHandler = (e) => {
@@ -24,7 +24,8 @@ const Buy = () => {
     const s = [];
     Object.keys(items).forEach((name) => {
         const service = services.find(service => service.name === name);
-        s.push(service);
+        const item = service ? service : packages.find(p => p.name === name);
+        s.push(item);
     })
     const removeItems = (name) => {
         localStorage.removeItem(name);

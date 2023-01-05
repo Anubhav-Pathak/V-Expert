@@ -10,6 +10,9 @@ import partition from "../assests/images/services/PartitionInstallation.jpg"
 import carpentry from "../assests/images/services/Carpentry.jpg"
 import wallpaper from "../assests/images/services/Wallpaper.jpg"
 import handyman from "../assests/images/services/Handyman.jpg"
+import first from "../assests/images/packages/First.jpg";
+import buisness from "../assests/images/packages/Business.jpg";
+import economy from "../assests/images/packages/Economy.jpg";
 
 export const services = [
     {
@@ -173,6 +176,7 @@ export const services = [
 export const packages = [
     {
         path: "first",
+        img: first, 
         name: "First",
         price: 3099,
         pm: 3,
@@ -189,6 +193,7 @@ export const packages = [
     },
     {
         path: "buisness",
+        img: buisness,
         name: "Buisness",
         price: 2099,
         pm: 2,
@@ -205,6 +210,7 @@ export const packages = [
     },
     {
         path: "economy",
+        img: economy,
         name: "Economy",
         price: 1099,
         pm: 1,

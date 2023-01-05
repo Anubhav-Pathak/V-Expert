@@ -30,7 +30,7 @@ const Checkout = (props) => {
         <div className='flex items-center justify-between mb-8'>
           <img src={logo} alt="logo" width={"120px"}/>
         </div>
-          <form className='flex flex-col gap-2' action="" method='POST' onSubmit={submitHandler}>
+          <form className='flex flex-col gap-2' method='POST' onSubmit={submitHandler}>
             <div className='flex flex-col gap-1'>
                 <label htmlFor='name'>Name</label>
                 <input id="name" type={"text"} name="name" placeholder='Enter your name' className='border-b-2 border-blue py-1 px-3 rounded-sm outline-none'/>
