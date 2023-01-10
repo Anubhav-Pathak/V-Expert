@@ -48,10 +48,10 @@ export const services = [
         name: "Plumbing",
         description: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation",
         details: {
-            para1: "The installation, testing & commissioning, maintenance of the air conditioning and ventilation system shall be carried out by a specialist in order to ensure proper operation",
-            para2: "V-Expert provides high-quality air conditioning, ventilation, and filtration system installation services to private and corporate clients.",
-            label: "Our teams of qualified technicians are highly qualified to install/replace the range of air conditioning, ventilation and filtration systems, notably: ",
-            features: ["Design/Build Installations", "Chilled Water Piping Works", "All types of Duct Works", "All types of Grills", "Exhaust Fans", "FCU/FAHU/AHU/Chillers", "Chilled Water Pumps", "HEXs", "Fire Dampers", "Central cooling system", "DX cooling system", "District cooling system", "Smoke and pressure extract system"],
+            para1: "The installation, testing & commissioning, maintenance of the Plumbing system shall be carried out by a specialist in order to ensure proper operation",
+            para2: "V-Expert provides high-quality Plumbing system installation services to private and corporate clients.",
+            label: "Our technicians are highly qualified to install/replace the range of Plumbing systems, notably: ",
+            features: ["Design/Build Installations", "Transfer Pumps / Control Panels", "Booster Pumps / Control Panels", "Sump Pumps", "HDPE Pipe works with Electrofusion / Butt Weld Joints", "PPR Pipe Work", "Pex Pipe Work", "U-PVC Pipe Work", "Sanitaryware's", "Bathroom Accessories / Final Fix Works", "Electrical Water Heaters / Solar Water Heaters", "RO Water System", "Rain water Outlets"],
         }
     },
     {
@@ -61,10 +61,10 @@ export const services = [
         name: "Testing",
         description: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation",
         details: {
-            para1: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation.",
+            para1: "Testing and commissioning activities of Electromechanical systems shall be carried out by a specialist in order to ensure proper operation",
             para2: "V-Expert provides high-quality Testing and commissioning activities of Electromechanical systems to our clients.",
-            label: "Our technicians are highly qualified in Testing and commissioning range , notably",
-            description: ["Chilled water Piping System", "Air conditioning Equipment's", "Chilled water pumps", "Air Balancing", "Chilled Water Balancing", "Hot Water Balancing", "Cold Water network Pressure setting", "Transfer / Booster Pumps", "All special valves like Thermostatic Mixing valves , DRV , PICV , PRV etc.", "Electrical Water Heaters / Solar Water Heaters", "RO Water System", "Bus Bars", "Lighting Control System", "MDB , SMDB,MCC& DB", "Voice/Data/ Fiber Optics Systems", "Intercom Systems", "Inverters", "Security Systems", "Solar Panels"],
+            label: "Our technicians are highly qualified in Testing and commissioning range , notably: ",
+            features: ["Chilled water Piping System", "Air conditioning Equipment's", "Chilled water pumps", "Air Balancing", "Chilled Water Balancing", "Hot Water Balancing", "Cold Water network Pressure setting", "Transfer / Booster Pumps", "All special valves like Thermostatic Mixing valves, DRV, PICV, PRV etc.", "Electrical Water Heaters / Solar Water Heaters", "RO Water System", "Bus Bars", "Lighting Control System","MDB, SMDB, MCC & DB","Voice/Data/ Fiber Optics Systems","Intercom Systems","Inverters","Security Systems","Solar Panels"],
         }
     },
     {
@@ -175,20 +175,19 @@ export const services = [
 
 export const packages = [
     {
-        path: "first",
-        img: first, 
-        name: "First",
-        price: 3099,
-        pm: 3,
-        rsc: 12,
-        hs: 3,
+        path: "economy",
+        img: economy,
+        name: "Economy",
+        price: 1099,
+        pm: 1,
+        rsc: 6,
         properties: {
-            "Apartment - Studio / 1 Br / 2 Br": 3099,
-            "Apartment - 3 Br / 4 Br": 4199,
-            "Apartment - 5 Br / Pent House": 5399,
-            "Villa - 2 Br / 3 Br": 6299,
-            "Villa - 4 Br / 5 Br": 7499,
-            "Villa - 6 Br / 7 Br": 8899,
+            "Apartment - Studio / 1 Br / 2 Br": 1099,
+            "Apartment - 3 Br / 4 Br": 1599,
+            "Apartment - 5 Br / Pent House": 2999,
+            "Villa - 2 Br / 3 Br": 3299,
+            "Villa - 4 Br / 5 Br": 3999,
+            "Villa - 6 Br / 7 Br": 4999,
         },
     },
     {
@@ -209,21 +208,22 @@ export const packages = [
         },
     },
     {
-        path: "economy",
-        img: economy,
-        name: "Economy",
-        price: 1099,
-        pm: 1,
-        rsc: 6,
+        path: "first",
+        img: first, 
+        name: "First",
+        price: 3099,
+        pm: 3,
+        rsc: 12,
+        hs: 3,
         properties: {
-            "Apartment - Studio / 1 Br / 2 Br": 1099,
-            "Apartment - 3 Br / 4 Br": 1599,
-            "Apartment - 5 Br / Pent House": 2999,
-            "Villa - 2 Br / 3 Br": 3299,
-            "Villa - 4 Br / 5 Br": 3999,
-            "Villa - 6 Br / 7 Br": 4999,
+            "Apartment - Studio / 1 Br / 2 Br": 3099,
+            "Apartment - 3 Br / 4 Br": 4199,
+            "Apartment - 5 Br / Pent House": 5399,
+            "Villa - 2 Br / 3 Br": 6299,
+            "Villa - 4 Br / 5 Br": 7499,
+            "Villa - 6 Br / 7 Br": 8899,
         },
-    }
+    },    
 ];
 
 export const packageDetails = {

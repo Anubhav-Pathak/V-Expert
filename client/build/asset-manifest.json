@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13518bfc.css",
+    "main.js": "/static/js/main.4d7296ec.js",
+    "static/media/Electrical.jpg": "/static/media/Electrical.38ed345b171b96059113.jpg",
+    "static/media/Plumbing.jpg": "/static/media/Plumbing.dae0cd23684bd3b3f55b.jpg",
+    "static/media/AirConditioning.jpg": "/static/media/AirConditioning.7aa7b131d33fab798c29.jpg",
+    "static/media/FalseCeiling.jpg": "/static/media/FalseCeiling.8e3b3082e8388dee0c27.jpg",
+    "static/media/Painting.jpg": "/static/media/Painting.34304845a7e22e451cbe.jpg",
+    "static/media/Plaster.jpg": "/static/media/Plaster.f3ba9cfd518ba91439a8.jpg",
+    "static/media/Business.jpg": "/static/media/Business.5e29df9c9f79c980b93c.jpg",
+    "static/media/Carpentry.jpg": "/static/media/Carpentry.7638fe3cacd2de133486.jpg",
+    "static/media/First.jpg": "/static/media/First.bf7a74e75eef5ec8a87b.jpg",
+    "static/media/Economy.jpg": "/static/media/Economy.072a98e3e470b115c458.jpg",
+    "static/media/Handyman.jpg": "/static/media/Handyman.49fc4c312f835a23e81e.jpg",
+    "static/media/PartitionInstallation.jpg": "/static/media/PartitionInstallation.88caba04b2ebdc13d79b.jpg",
+    "static/media/FloorWallTiling.jpg": "/static/media/FloorWallTiling.9eb6618f057bc25ae138.jpg",
+    "static/media/img.png": "/static/media/img.31a28107776a0ac55f24.png",
+    "static/media/Testing.jpg": "/static/media/Testing.c8f466d575932e25a515.jpg",
+    "static/media/Footer-Logo.png": "/static/media/Footer-Logo.d587d39cdfda90f7d33f.png",
+    "static/media/Wallpaper.jpg": "/static/media/Wallpaper.a1c07b6ba69063071d53.jpg",
+    "static/media/V1.svg": "/static/media/V1.77d4418d99c8cb5dbfcdec93b72c0146.svg",
+    "static/media/V4.svg": "/static/media/V4.39b24d93e9c23a657bc9a6a66022d8c8.svg",
+    "static/media/w2.svg": "/static/media/w2.ab283685a3cd444d41db3ba7c9cc2386.svg",
+    "static/media/V2.svg": "/static/media/V2.4f444756e2f0a1228d7886d541318e7e.svg",
+    "index.html": "/index.html",
+    "main.13518bfc.css.map": "/static/css/main.13518bfc.css.map",
+    "main.4d7296ec.js.map": "/static/js/main.4d7296ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13518bfc.css",
+    "static/js/main.4d7296ec.js"
+  ]
+}

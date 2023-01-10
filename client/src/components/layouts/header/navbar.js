@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav id="nav" className="w-[100%] z-50 sticky top-0 py-2 lg:py-0 pl-4 flex items-center justify-between lg:justify-start bg-white text-[16px]">
             <a href="/" className="mr-8 p-2"><img src={logo} alt="V-Expert" className="w-[150px] md:w-[200px] h-auto" /></a>
             <div className="lg:hidden pr-4 relative text-xl sm:text-3xl">
-                <i id="address" className="fa-solid fa-address-book cursor-pointer text-blue" onClick={toggleHeader}></i>
+                <i id="address" className="fa-xl fa-solid fa-address-book cursor-pointer text-blue mr-3" onClick={toggleHeader}></i>
                 <div className={`${header ? "hidden" : ""} flex-col absolute top-[40px] right-0 w-[250px] bg-blue text-white p-4 text-[16px]`}>
                     <div className="flex items-center lg:justify-center">
                         <i className="fa-solid fa-phone "></i>
@@ -31,13 +31,12 @@ const Navbar = () => {
                         <p className="ml-1 leading-4">Dubai, UAE</p>
                     </div>
                 </div>
-                <i className="fa-solid fa-magnifying-glass mx-4 cursor-pointer text-blue"></i>
-                <i className={`fa-solid ${navbar ? 'fa-bars':'fa-xmark'} cursor-pointer text-blue`} onClick={toggleNavbar}></i>
+                <i className={`fa-solid ${navbar ? 'fa-bars':'fa-xmark'} fa-xl cursor-pointer text-blue`} onClick={toggleNavbar}></i>
             </div>
             <div className={`navlinks ${navbar ? "hidden" : "absolute lg:static left-0 top-0 block min-h-[100vh] lg:min-h-fit w-[250px] lg:w-auto bg-blue"} lg:mt-4 lg:pl-6 lg:pr-4 lg:py-2 lg:flex-grow lg:flex lg:items-center lg:justify-between lg:rounded-tl-full text-white lg:bg-blue`}>
                 <div className="py-8 lg:py-0 flex flex-col lg:flex-row gap-12 lg:gap-0">
                     <a href="/" className="py-2 px-4 mr-4">Home</a>
-                    <a href="#About" className="py-2 px-4 mr-4">About</a>
+                    <a href="/#About" className="py-2 px-4 mr-4">About</a>
                     <Dropdown name="Packages" links={packages}/>
                     <Dropdown name="Services" links={services}/>
                     <a href="#Contact" className="py-2 px-4 mr-4">Contact</a>

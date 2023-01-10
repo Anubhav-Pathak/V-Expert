@@ -14,6 +14,7 @@ const Packages = () => {
         <main className='pb-12 bg-gray'>
             <section className="bg-blue flex items-center justify-center">
                 <div className="max-w-[1400px] mx-auto p-4 text-center text-white">
+                    <h3 className='text-md'>Annual Contract Package</h3>
                     <h1 className="text-5xl sm:text-6xl mb-4">{packageType.name}</h1>
                 </div>
             </section>

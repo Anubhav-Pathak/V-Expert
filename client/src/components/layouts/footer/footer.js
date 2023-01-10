@@ -37,9 +37,9 @@ const Footer = () => {
 
                     <ul className="lg:row-span-full">
                         <h6 className="uppercase text-yellow-400 font-bold mb-4 flex text-gold">Useful Links</h6>
-                        <li><a href="#about" className="">About</a></li>
-                        <li><a href="#package" className="">Packages</a></li>
-                        <li><a href="#service" className="">Services</a></li>
+                        <li><a href="/#about" className="">About</a></li>
+                        <li><a href="/#package" className="">Packages</a></li>
+                        <li><a href="/#service" className="">Services</a></li>
                     </ul>
                 </div>
 
