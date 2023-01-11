@@ -16,6 +16,7 @@ import economy from "../assests/images/packages/Economy.jpg";
 
 export const services = [
     {
+        price: 100,
         path: "air-conditioning",
         img: airConditioning,
         icon: "fa-screwdriver",
@@ -29,6 +30,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "electrical",
         img: electrical,
         icon: "fa-screwdriver",
@@ -42,6 +44,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "plumbing",
         img: plumbing,
         icon: "fa-hammer",
@@ -55,6 +58,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "testing",
         img: testing,
         icon: "fa-screwdriver",
@@ -68,6 +72,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "tiling",
         img: tiling,
         icon: "fa-hammer",
@@ -81,6 +86,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "painting",
         img: painting,
         icon: "fa-hammer",
@@ -94,6 +100,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "plaster",
         img: plaster,
         icon: "fa-hammer",
@@ -107,6 +114,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "false-ceiling",
         img: falseCeiling,
         icon: "fa-hammer",
@@ -120,6 +128,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "partition-installing",
         img: partition,
         icon: "fa-screwdriver",
@@ -133,6 +142,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "carpentry",
         img: carpentry,
         icon: "fa-hammer",
@@ -146,6 +156,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "wallpaper",
         img: wallpaper,
         icon: "fa-screwdriver",
@@ -159,6 +170,7 @@ export const services = [
         }
     },
     {
+        price: 100,
         path: "handyman",
         img: handyman,
         icon: "fa-screwdriver",
