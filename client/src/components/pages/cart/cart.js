@@ -1,11 +1,13 @@
 import React from 'react'
 import Buy from './buy'
-import More from './more'
+import Service from '../home/service'
+import Package from '../home/package'
 const Cart = () => {
   return (
     <main className='bg-gray pb-12'>
       <Buy/>
-      <More />
+      <Service/>
+      <Package />
     </main>
   )
 }

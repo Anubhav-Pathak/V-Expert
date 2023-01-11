@@ -30,7 +30,7 @@ export const services = [
         }
     },
     {
-        price: 100,
+        price: 200,
         path: "electrical",
         img: electrical,
         icon: "fa-screwdriver",
@@ -58,7 +58,7 @@ export const services = [
         }
     },
     {
-        price: 100,
+        price: 200,
         path: "testing",
         img: testing,
         icon: "fa-screwdriver",
@@ -86,7 +86,7 @@ export const services = [
         }
     },
     {
-        price: 100,
+        price: 200,
         path: "painting",
         img: painting,
         icon: "fa-hammer",
@@ -114,7 +114,7 @@ export const services = [
         }
     },
     {
-        price: 100,
+        price: 200,
         path: "false-ceiling",
         img: falseCeiling,
         icon: "fa-hammer",
@@ -142,7 +142,7 @@ export const services = [
         }
     },
     {
-        price: 100,
+        price: 200,
         path: "carpentry",
         img: carpentry,
         icon: "fa-hammer",
@@ -170,7 +170,7 @@ export const services = [
         }
     },
     {
-        price: 100,
+        price: 200,
         path: "handyman",
         img: handyman,
         icon: "fa-screwdriver",
@@ -253,7 +253,7 @@ export const reviews = [
         name:"Saad Zaghloul"
     },
     {
-        rating:5,
+        rating:4.5,
         review:"The V-Expert Technical Services team did a great job on some painting and other repair works in my villa. The teams were on time they covered all our furniture before painting and sorted everything in time..",
         name: "Faizal"
     },
@@ -261,9 +261,14 @@ export const reviews = [
         rating:4,
         review:"I had some pipe extension works in my villa. V-Expert Technical Services team came right away and fixed it. Really appreciate their response time and services.",
         name: "Mohamed"
-    },	
+    },
     {
-        rating:4,
+        rating: 4,
+        review: "When I had just moved into the new villa. I spotted the V-Expert Technical Services & Decided to call them to enquire about maintenance packages. An engineer arranged to meet me at my villa and went over what preventive maintenance would need for the equipment’s. they quoted a fair price for my villa annual maintenance. They always come on time do a clean job and the engineer always call back to check if everything was ordered. Highly recommended maintenance company in Dubai.",
+        name: "Abdul Rahim"
+    },
+    {
+        rating:4.5,
         review:"My experience with V-Expert Technical Services home maintenance was excellent both in terms of service and quality of works. The team who did the job for our home were neat and professional. Thanks for the stress-free experience. best maintenance company. Recommended.",
         name: "Charles"
     },
@@ -278,12 +283,12 @@ export const reviews = [
         name: "Abhishek"
     },
     {
-        rating:5,
+        rating:4.5,
         review:"This is the 2nd time I've contacted the V-Expert Technical Services team for an office repair, and again they never fail to exceed my expectation.",
         name: "Abhishek"
     },
     {
-        rating:4,
+        rating:4.5,
         review:"I am so glad I found this company. Good maintenance companies are hard to find these days. We have our annual AMC contract with them, and they have been responsive to our requests.",
         name: "Santhosh"
     },

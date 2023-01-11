@@ -30,12 +30,12 @@ const Testimony = () => {
 
 
     return (
-        <section className='mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray min-h-[400px]'>
+        <section className='mt-12 py-12 px-4 flex flex-col gap-8 items-center justify-start bg-gray min-h-[530px]'>
             <h1 className='text-5xl sm:text-6xl text-center text-blue'>Testimonies</h1>
             {!loading?
                 <div className='review max-w-3xl relative shadow-xl rounded-lg border-gold border-4 bg-white'>
                     <article className="rounded-lg">
-                        <Rating name="read-only" value={rating} readOnly />
+                        <Rating name="half-rating-read" value={rating} precision={0.5} readOnly />
                         <Typography component="legend">{review}</Typography>
                         <address className='mt-4 text-center'>{name}</address>
                     </article>

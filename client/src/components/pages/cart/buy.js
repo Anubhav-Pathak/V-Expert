@@ -14,7 +14,7 @@ const ServiceCard = (props) => {
         <div className=' flex-grow'>
         <h3 className='text-2xl mb-2'>{service.name}</h3>
         <hr />
-        <p className='text-xl mt-2 mb-4'>Base price: {100}</p>
+        <p className='text-xl mt-2 mb-4'>Base price: {props.price}</p>
         <button className='px-4 py-2 bg-blue border-2 border-blue text-white rounded-md hover:bg-white hover:text-blue' onClick={clickHandler} value={service.name}>Remove</button>
         </div>  
         </div>
@@ -30,12 +30,12 @@ const Buy = () => {
     Object.keys(items).forEach((name) => {
         const service = services.find(service => service.name === name);
         const item = service ? service : packages.find(p => p.name === name);
-        price += item.price;
+        price += Number(localStorage[item.name]);
         s.push(item);
     })
     const removeItems = (name) => {
         const item = s.find(item => item.name === name);
-        price -= item.price;
+        price -= Number(item.price);
         localStorage.removeItem(name);
         setItems(prevState => {
             return {...localStorage}
@@ -49,7 +49,7 @@ const Buy = () => {
                 <a href='/checkout' className='text-xl bg-blue border-2 border-blue text-white rounded-md px-4 py-2 hover:border-gold hover:text-gold'>Book Appointment</a>
             </div>
             {localStorage.length > 0 ? 
-                s.map((service)=>{return(<ServiceCard service={service} onHandleClick={()=> removeItems(service.name)}/>)})
+                s.map((service)=>{return(<ServiceCard service={service} price={localStorage.getItem(service.name)} onHandleClick={()=> removeItems(service.name)}/>)})
             :<h1 className='text-center my-8 text-2xl'> Your Cart is Empty ! </h1>}
         </div>
     </section>
