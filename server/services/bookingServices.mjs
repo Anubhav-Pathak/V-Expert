@@ -45,6 +45,8 @@ const insert = async (body) => {
             time: body.ptime,
             requirements: body.requirements,
             name: body.name,
+            serviceList: body.serviceList,
+            packageList: body.packageList,
         });
         if(res)
             return res;
