@@ -1,21 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { baseUrl } from '../../constants'
 import logo from "../../assests/images/Footer-Logo.png"
+
+let packageList = []
+  let serviceList = []
 const Checkout = (props) => {
+  
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    let items = { ...localStorage };
+    delete items['user'];
+  items = Object.keys(items).map((item) => {
+    if (Number(item.price) > 200){
+      packageList.push(item)
+    } else {
+      serviceList.push(item)      
+    }
+  });
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-    console.log(data);
-    console.log("baseUrl", baseUrl);
+    const newData = { ...data, serviceList: serviceList, packageList: packageList };
+    console.log("newData", newData);
     const response = await fetch(`${baseUrl}/bookings`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(newData),
     })
     const res = await response.json();
     if (response.status === 201) {
@@ -23,6 +36,8 @@ const Checkout = (props) => {
       window.location.href = "/";
     }
   }
+
+  
 
   return (
     <section className='mx-4 py-12'>
