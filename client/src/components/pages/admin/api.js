@@ -15,15 +15,6 @@ const getBookings = async (status) => {
     return await axios.get(`${baseUrl}/bookings?status=${status}`, config);
 }
 
-const signIn = async (formData) => {
-    return await axios.post(`${baseUrl}/users/sign-in`, formData);
-}
-
-const signUp = async (formData) => {
-    setAuth();
-    return await axios.post(`${baseUrl}/users/sign-up`, formData, config);
-}
-
 const bookingComplete = async (id) => {
     setAuth();
     return await axios.patch(`${baseUrl}/bookings/${id}`, {status: 'complete'}, config);
@@ -31,7 +22,5 @@ const bookingComplete = async (id) => {
 
 export {
     getBookings,
-    signIn,
-    signUp,
     bookingComplete
 }

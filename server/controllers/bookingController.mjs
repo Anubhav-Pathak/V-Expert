@@ -1,3 +1,4 @@
+import Booking from "../models/booking.mjs";
 import {findAll, findById, insert, deleteRecord, update} from "../services/bookingServices.mjs";
 import logger from "../utils/logger.mjs";
 
