@@ -1,23 +1,14 @@
 {
-  "version": 2,
-  "builds": [
+  "builds":[
     {
-      "src": "./server/index.mjs",
-      "use": "@vercel/node"
+        "src":"./server/index.mjs",
+        "use":"@vercel/node"
     }
   ],
-  "routes": [
+  "routes":[
     {
-      "src": "/(.*)",
-      "dest": "/server/index.mjs"
-    },
-    {
-      "src": "/api/bookings",
-      "dest": "/server/index.mjs"
-    },
-    {
-      "src": "/api/users",
-      "dest": "/server/index.mjs"
+        "src":"/.*",
+        "dest":"server/index.mjs"
     }
   ]
 }
