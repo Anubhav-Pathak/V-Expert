@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 })
 
-app.use('/users', UserRouter);
-app.use('/bookings', BookingRouter);
+app.use('/api/users', UserRouter);
+app.use('/api/bookings', BookingRouter);
 
 export {
     app
