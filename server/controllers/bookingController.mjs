@@ -4,7 +4,6 @@ import logger from "../utils/logger.mjs";
 
 const getAllBookings = async (req, res) => {
     try {
-
         const filter = req.query;
 
         const bookings = await findAll(filter);

@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.use('/api', ApiRouter);
 
-app.get("/*", function(_, res) {
+app.get("/*", async function(_, res) {
   res.sendFile(
     path.join(__dirname, "../client/build", "index.html"),
       function (err) {
