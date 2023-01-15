@@ -12,10 +12,11 @@ mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
 }).then(() => {
     logger.info('Connected to DB');
+    app.listen(port, () => {
+        logger.info(`Server is running on port ${port}`);
+    })
 }).catch((e) => {
     logger.error(`Unable to connect to DB ${e}`);
 });
 
-app.listen(port, () => {
-    logger.info(`Server is running on port ${port}`);
-})
+
