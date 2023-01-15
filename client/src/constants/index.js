@@ -1,7 +1,9 @@
-let baseUrl = "http://localhost:8000/api";
+let baseUrl = '';
 
 if (process.env.NODE_ENV === "production") {
-  baseUrl = window.location.origin + "/api";
+  baseUrl = REACT_APP_BACKEND_URL + "/api";
+} else {
+  baseUrl = "http://localhost:8000/api";
 }
 
 export {
