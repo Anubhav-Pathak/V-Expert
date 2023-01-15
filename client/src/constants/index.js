@@ -1,11 +1,9 @@
-let baseUrl = '';
-
-if (process.env.NODE_ENV === "production") {
-  baseUrl = REACT_APP_BACKEND_URL + "/api";
+if (process.env.NODE_ENV !== 'production') {
+  const baseUrl = 'http://localhost:8000/api';
 } else {
-  baseUrl = "http://localhost:8000/api";
+  const baseUrl = 'https://server-eq3c.onrender.com/api';
 }
 
 export {
-    baseUrl,
+  baseUrl
 }
