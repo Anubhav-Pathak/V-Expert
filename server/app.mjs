@@ -1,19 +1,13 @@
 import express from "express";
 import cors from "cors";
 
-import {BookingRouter} from "./routes/bookingRouter.mjs";
-import { UserRouter } from "./routes/userRouter.mjs";
+import { ApiRouter } from "./routes/api.mjs";
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send('Hello World');
-})
-
-app.use('/api/users', UserRouter);
-app.use('/api/bookings', BookingRouter);
+app.use('/api', ApiRouter);
 
 export {
     app
