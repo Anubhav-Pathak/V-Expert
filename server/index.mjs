@@ -8,15 +8,17 @@ dotEnv.config({path: './.env'});
 
 const port = process.env.PORT || 8000;
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.set('strictQuery', false);
+
+await mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
+    useUnifiedTopology: true
 }).then(() => {
     logger.info('Connected to DB');
-    app.listen(port, () => {
-        logger.info(`Server is running on port ${port}`);
-    })
 }).catch((e) => {
     logger.error(`Unable to connect to DB ${e}`);
 });
 
-
+app.listen(port, () => {
+    logger.info(`Server is running on port ${port}`);
+})
