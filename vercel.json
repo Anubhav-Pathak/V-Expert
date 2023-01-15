@@ -2,26 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "./server/index.mjs",  
+      "src": "./server/index.mjs",
       "use": "@vercel/node"
-    },
-    {
-      "src": "./client/build",    
-      "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/bookings",
-      "destination": "/server/index.mjs"
+      "src": "/(.*)",
+      "dest": "/server/index.mjs"
     },
     {
-      "source": "/api/users/",
-      "destination": "/server/index.mjs"
+      "src": "/api/bookings",
+      "dest": "/server/index.mjs"
     },
     {
-      "source": "/(.*)",
-      "destination": "/server/index.mjs"
+      "src": "/api/users",
+      "dest": "/server/index.mjs"
     }
   ]
 }
