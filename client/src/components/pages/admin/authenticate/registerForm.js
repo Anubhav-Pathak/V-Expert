@@ -29,8 +29,8 @@ export default () => {
 
     useEffect(()=>{
         const user = localStorage.getItem('user');
-        if(user)
-            navigate("/admin/panel");
+        if(!user)
+            navigate("/admin/login");
     },[])
 
     return (

@@ -28,10 +28,12 @@ const Buy = () => {
     const [items, setItems] = React.useState({...localStorage});
     const s = [];
     Object.keys(items).forEach((name) => {
-        const service = services.find(service => service.name === name);
-        const item = service ? service : packages.find(p => p.name === name);
-        price += Number(localStorage[item.name]);
-        s.push(item);
+        if(name !== "user"){
+            const service = services.find(service => service.name === name);
+            const item = service ? service : packages.find(p => p.name === name);
+            price += Number(localStorage[item.name]);
+            s.push(item);
+        }
     })
     const removeItems = (name) => {
         const item = s.find(item => item.name === name);
