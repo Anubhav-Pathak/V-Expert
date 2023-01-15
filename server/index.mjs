@@ -8,8 +8,6 @@ dotEnv.config({path: './.env'});
 
 const port = process.env.PORT || 8000;
 
-mongoose.set('strictQuery', false);
-
 await mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
