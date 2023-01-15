@@ -23,6 +23,7 @@ const Checkout = (props) => {
     const data = Object.fromEntries(formData);
     const newData = { ...data, serviceList: serviceList, packageList: packageList };
     console.log("newData", newData);
+    console.log("baseurl", baseUrl);
     const response = await fetch(`${baseUrl}/bookings`, {
       method: "POST",
       headers: {
@@ -34,6 +35,8 @@ const Checkout = (props) => {
     if (response.status === 201) {
       alert("Booking Successful");
       window.location.href = "/";
+    } else {
+      alert("Booking Failed");
     }
   }
 
