@@ -1,14 +1,18 @@
 {
-  "builds":[
+  "builds": [
+    { "src": "server/index.mjs", "use": "@vercel/node" },
     {
-        "src":"./server/index.mjs",
-        "use":"@vercel/node"
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
     }
   ],
-  "routes":[
+  "routes": [
     {
-        "src":"/(.*)",
-        "dest":"server/index.mjs"
-    }
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000, immutable" },
+      "dest": "client/static/$1"
+    },
+    { "src": "/(.*)", "dest": "client/index.html" }
   ]
 }
