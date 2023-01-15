@@ -12,6 +12,14 @@
   ],
   "rewrites": [
     {
+      "source": "/api/bookings",
+      "destination": "/server/index.mjs"
+    },
+    {
+      "source": "/api/users/",
+      "destination": "/server/index.mjs"
+    },
+    {
       "source": "/(.*)",
       "destination": "/server/index.mjs"
     }
